@@ -1,0 +1,17 @@
+
+
+.body-welcome{
+    background-image: linear-gradient(lightgrey, black), url("images/theCrossroads.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: saturation;
+    background-size: cover;
+    height: auto;
+}
+
+.body-articles{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    height: auto;
+    color:lightgray;
+}
