@@ -1,9 +1,176 @@
+/*
+    Styles:
 
+    #010326
+    #42378C
+    #4B2F73
+    #8C5679
+    #F2C4D0
+    #EDECE0
+    grey
+    lightgrey
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Helvetica, Lato;
+}
+
+.header{
+    width: auto;
+    background-color: #4B2F73;
+    color: #EDECE0;
+    height: 75px;
+}
+
+.header h1{
+    padding-top: 15px;
+    padding-left: 50px;
+    color:#EDECE0;
+}
+
+#custom-nav-text{
+    display: inline-block;
+    right: 0px;
+    top: 20px;
+    position: absolute;
+    padding-right: 10px;
+    visibility: visible;
+}
+
+#custom-nav-text button{
+    border: none;
+    background: none;
+    width: 150px;
+    height: 35px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #2f4550;
+}
+
+#custom-nav-text button a{
+    color: #EDECE0;
+    text-decoration: none;
+}
+
+#custom-nav-text button a:hover{
+    color: #F2C4D0;
+}
+
+#custom-nav-text button a:active{
+    color: #4B2F73;
+}
+
+.custom-dropdown{
+    visibility: hidden;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background: #EDECE0;
+    border: none;
+    border-radius: 10px;
+    color: #42378C;
+    margin-bottom: 10px;
+    font-family: comic sans ms;
+}
+
+button:hover{
+    background: lightgrey;
+}
+
+button:active{
+    background: #8C5679;
+}
+
+@media only screen and (min-width: 850px) {
+    #custom-dropdown-content a{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #custom-nav-text{
+        display: none;
+    }
+
+    .header h1{
+        padding-top: 20px;
+        padding-left: 10px;
+        color:#EDECE0;
+    }
+
+    .custom-dropdown{
+        visibility: visible;
+    }
+
+    .custom-dropdown-button{
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        margin-right: 10px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 10px;
+        color: #42378C;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .custom-dropdown-button:hover{
+        background-color: lightgrey;
+    }
+
+    #custom-dropdown-content{
+        right: 0px;
+        visibility: hidden;
+        top: 60px;
+        margin-right: 10px;
+        position: absolute;
+        background-color: #EDECE0;
+        min-width: 160px;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    #custom-dropdown-content a{
+        text-decoration: none;
+        display: block;
+        padding: 12px 16px;
+        color:#010326;
+        border-top: 1px solid #42378C;
+    }
+
+    #custom-dropdown-content a:hover{
+        background: lightgrey;
+    }
+}
+
+.custom-page-header h2{
+    text-align: center;
+    color: #EDECE0; 
+    padding-top: 50px;
+}
 
 .body-welcome{
-    background-image: linear-gradient(lightgrey, black), url("images/theCrossroads.jpg");
+    background-image: url("images/theCrossroads.jpg");
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(66, 55, 140, 0.9);
+    background-blend-mode: saturation;
+    background-size: cover;
+    height: auto;
+}
+
+.body-aboutme{
+    background-image: url("images/monkeying_around.JPG");
+    background-repeat: no-repeat;
+    background-color: rgba(66, 55, 140, 0.9);
     background-blend-mode: saturation;
     background-size: cover;
     height: auto;
@@ -14,4 +181,13 @@
     margin-bottom: 3%;
     height: auto;
     color:lightgray;
+}
+
+.custom-footer-class{
+    background-color: #4B2F73;
+    color: #EDECE0;
+    text-align: center;
+    height: 80px;
+    width: auto;
+    padding-top: 5px;
 }

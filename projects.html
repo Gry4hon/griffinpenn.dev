@@ -12,41 +12,98 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.jpg" alt="Bootstrap" width="30" height="24">
-                Griffin Penn
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarText">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="header sticky-top">
+        <a href="index.html" style="text-decoration: none;"><h1>Griffin</h1></a>
+        <div id="custom-nav-text">
+            <button id="nav-button"><a href="projects.html">Projects</a></button>
+            <button id="nav-button"><a href="aboutme.html">About Me</a></button>
+            <button id="nav-button"><a href="contact.html">Contact me</a></button>
         </div>
-    </nav>
-
-    <div>
-        <div class="container-fluid">
-            <h1 style="color: lightgray;">Projects</h1>
-
-            <div class="container-fluid justify-content-center">
-                <p>Copyright Griffin Penn 2023</p>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-button" onclick="MakeVisiable()">|||</button>
+            <div id="custom-dropdown-content">
+                <a href="projects.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contact.html">Contact me</a>
             </div>
         </div>
     </div>
+
+
+    <div class="body-welcome">
+        <div class="container-fluid">
+            <div class="custom-page-header"><h2>Projects</h2></div> 
+
+            <div class="container d-flex justify-content-center" style="margin-top: 100px;">
+                <iframe width="625px" height="350px" src="https://www.youtube.com/embed/rKz6kIW4Uos&t" frameborder="0"
+                    allowfullscreen>
+
+                </iframe>
+            </div>
+            <div class="container body-articles">
+                <article>
+                    <h2>What are the crossroads?</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                </article>
+            </div>
+
+            <div class="container body-articles">
+                <article>
+                    <h2>What are the crossroads?</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                </article>
+            </div>
+
+            <div class="container body-articles">
+                <article>
+                    <h2>What are the crossroads?</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                </article>
+            </div>
+
+            <div class="container body-articles">
+                <article>
+                    <h2>What are the crossroads?</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -58,6 +115,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+    <script>
+        let numberOfClicks = 0;
+
+        function MakeVisiable() {
+            let dropDownContent = document.getElementById('custom-dropdown-content');
+
+            numberOfClicks += 1;
+
+            if (numberOfClicks % 2 == 0) {
+                dropDownContent.style.visibility = 'hidden';
+            } else {
+                dropDownContent.style.visibility = 'visible';
+            }
+
+        }
+    </script>
 </body>
+<footer>
+    <div class="custom-footer-class">
+        <p>Copyright Griffin Penn 2023 &copy;</p>
+        <p>I love you Abby </p>
+    </div>
+</footer>
 
 </html>
