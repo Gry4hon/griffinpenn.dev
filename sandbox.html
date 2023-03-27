@@ -26,6 +26,7 @@
             <button id="nav-button"><a href="projects.html">Portfolio</a></button>
             <button id="nav-button"><a href="aboutme.html">About Me</a></button>
             <button id="nav-button"><a href="contact.html">Contact me</a></button>
+            <button id="nav-button"><a href="sandbox.html">Sandbox</a></button>
         </div>
         <div class="custom-dropdown">
             <button class="custom-dropdown-button" onclick="MakeVisiable()">|||</button>
@@ -33,28 +34,21 @@
                 <a href="projects.html">Portfolio</a>
                 <a href="aboutme.html">About Me</a>
                 <a href="contact.html">Contact me</a>
+                <a href="sandbox.html">Sandbox</a>
             </div>
         </div>
     </div>
 
 
     <div class="container-fluid sandbox-body-content">
+        <h2>My Sandbox</h2>
         <div class="model-viewer container">
-           
-            <model-viewer src="images/logo3D.glb" crossorigin="anonymous" camera-controls ></model-viewer>
+            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" crossorigin="anonymous" camera-controls ></model-viewer>
         </div>
     </div>
-
-
-
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
     <script>
-
-
-
-
         let numberOfClicks = 0;
 
         function MakeVisiable() {

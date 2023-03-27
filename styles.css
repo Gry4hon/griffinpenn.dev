@@ -342,13 +342,16 @@ button:active{
     height: 900px;
     background-color: #4B2F73;
     border-radius: 10px;
+    left: auto;
+    right: auto;
 }
 
 .model-viewer model-viewer{
     height: 600px;
     width: 600px;
-    position: absolute;
+
     top: 0;
-    left: 0;
+    left: auto;
+    right: auto;
     border: none;
 }
