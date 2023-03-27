@@ -231,7 +231,8 @@ button:active{
 
 
 .home-page-body{
-    height: 88vh;
+    height: auto;
+    padding-bottom: 15px;
     background-color: #EDECE0;
     padding: 1px;
     width: auto;
@@ -358,7 +359,7 @@ button:active{
     margin-top: 5%;
     margin-bottom: 3%;
     height: auto;
-    color:lightgray;
+    color: #EDECE0;
     font-size: 20px;
 }
 
