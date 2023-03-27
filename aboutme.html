@@ -9,11 +9,15 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <title>griffinpenn.dev</title>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
     <div class="header sticky-top">
-        <a href="index.html" style="text-decoration: none;"><h1>Griffin</h1></a>
+        <a href="index.html" style="text-decoration: none;">
+            <h1>Griffin</h1>
+        </a>
         <div id="custom-nav-text">
             <button id="nav-button"><a href="projects.html">Portfolio</a></button>
             <button id="nav-button"><a href="aboutme.html">About Me</a></button>
@@ -34,58 +38,61 @@
 
     <div class="body-aboutme">
         <div class="container-fluid">
-            
-           <div class="custom-page-header"><h2>About me</h2></div> 
-            
-           <div class="container d-flex justify-content-center" style="margin-top: 100px;">
-                <img class="img-fluid" width="600px" height="550px" src="images/me.jpg">
+
+            <div class="custom-page-header">
+                <h2>About me</h2>
+            </div>
+
+            <div class="container d-flex justify-content-center" style="margin-top: 100px;">
+                <img id="aboutme-pic" class="img-fluid" width="600px" height="550px" src="images/me.jpg">
             </div>
             <div class="container body-articles">
                 <article>
-                    <h3>Hi it's me, Griffin, nice to meet cha</h3>
+                    <h3>Hi it's me, Griffin, nice to meet you</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
+                        I am currently a senior at Boise State University pursuing a Bachlors of Science in Games
+                        Interactive Media and Mobile, and a minor
+                        in Information Technology management. Through my time at Boise State a passion for everything
+                        computer scienece grew within me. This is
+                        everything from programming and coding, building computers and systems, creating custom hardware
+                        for game development, and understanding
+                        about how everything works within a conventional computer. I am constently striving to learn
+                        more and more about the field of computer science, and
+                        improve my skills when it comes to working with technology at large.
                     </p>
                 </article>
             </div>
 
-            <div class="container body-articles">
-                <article>
-                    <h3>What are the crossroads?</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </p>
-                </article>
-            </div>
+
             <br>
         </div>
     </div>
-    <div class="aboutme-content">
-        <div class="container">
+    <div class="aboutme-container container-fluid">
+        <div class="aboutme-content container">
             <h2>Whats with the logo anyway?</h2>
-            <div class="container" style="margin-top: 50px;">
-                <div class="row">
-                    <div class="col">
-                            <h3>What are the crossroads?</h3>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            </p>
-                    </div>
-                    <div class="col">
-                        <img class="img-fluid" width="600px" height="450px" src="images/communication.jpg">
+            <br>
+            <div class="row">
+                <div class="col" id="aboutme-logo-explaination">
+                    <h3>The logo</h3>
+                    <p>
+                        The logo is quite simple, yet I wanted it to convey who I am at my core. The logo is ment to
+                        represent how I see myself,
+                        the intercetion between liberal arts and technology. The brackets on either side of the pen are
+                        found within the symbol for
+                        coding. This being the <strong>"
+                            < />"
+                        </strong> symbol. The pen in the middle is modeled after a
+                        drawing tablet pen that
+                        I have known as the Wacom Cintiq 13d tablet. These two symbols being combined represent that I
+                        view myself equally as a
+                        designer and a programmer.
+                    </p>
+                </div>
+                <div class="col aboutme-model">
+                    <div class="model-viewer-model">
+                        <model-viewer src="images/my_logo_3D.glb"
+                            alt="A three dimentional image of a pair of triangle brackets with a drawing tablet pen in the middle, my logo"
+                            crossorigin="anonymous" auto-rotate class="img-fluid"></model-viewer>
                     </div>
                 </div>
             </div>
@@ -94,67 +101,51 @@
     <div class="body-welcome">
         <div class="container-fluid">
             <br>
-            <div class="custom-page-header"><h2>Welcome to the crossroads</h2></div>
-
-            <div class="container body-articles">
-                <article>
-                    <h3>What are the crossroads?</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </p>
-                </article>
+            <div class="custom-page-header">
+                <h2>Welcome to the intercetion</h2>
             </div>
 
             <div class="container body-articles">
                 <article>
-                    <h3>What are the crossroads?</h3>
+                    <h3>What is the intercetion?</h3>
+                    <br>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
+                        The intercetion of technology and liberal arts is a metaphorical intercetion between the
+                        the power of technology and the creativity and intitiveness of liberal arts. The intercetion was
+                        coined by Steve Jobs
+                        at the 2011 launch of the iPad 2, linked <a
+                            href="https://www.youtube.com/watch?v=KlI1MR-qNt8">here</a>, in which
+                        he highlighted the importance to marry technology with the humanities. That with the speed and
+                        power of a device or software, so to
+                        must its design and useablility match its technological power. This is where I feel I lie in the
+                        field
+                        of software development, a designer for useablility and intuitiveness, and a programmer that
+                        focuses on performance
+                        and delivering above the expected result.
+                    </p>
+                </article>
+            </div>
+            <br>
+            <div class="container body-articles">
+                <article>
+                    <h3>My personal philosopy</h3>
+                    <br>
+                    <p>
+                        When it comes to software development, my personal philosopy is to program before I code. The
+                        difference is simple: programming is the planning and coding
+                        is the execution of the plan.
+                        Before I touch my keyboard, I first grab a piece of paper or my iPad and begin programming.
+                        Similar to how a building or structure can be built, a plan consisting of careful measurements
+                        and laying out resources is created by an architect. This is the analogy I visualize that helps
+                        with the next
+                        step of
+                        development: coding. Now coding is the next natrual step I take after programming, for it is
+                        much like the construction crew
+                        that creates the structure given the plans given to them by the architect.
                     </p>
                 </article>
             </div>
 
-            <div class="container body-articles">
-                <article>
-                    <h3>What are the crossroads?</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </p>
-                </article>
-            </div>
-
-            <div class="container body-articles">
-                <article>
-                    <h3>What are the crossroads?</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </p>
-                </article>
-            </div>
         </div>
         <br>
     </div>
@@ -190,8 +181,8 @@
 </body>
 <footer>
     <div class="custom-footer-class">
+        <br>
         <p>Copyright Griffin Penn 2023 &copy;</p>
-        <p>I love you Abby </p>
     </div>
 </footer>
 
