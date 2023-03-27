@@ -101,6 +101,15 @@ button:active{
         margin-top: 150px;
         font-size: 20px;
     }
+
+    .model-viewer-model model-viewer{
+        height: 600px;
+        width: 600px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 @media only screen and (max-width: 850px) {
@@ -196,6 +205,25 @@ button:active{
 
     .body-welcome{
         padding-bottom: 10px;
+    }
+
+    .model-viewer model-viewer{
+        height: 200px;
+        width: 200px;
+    }
+
+    .aboutme-model model-viewer{
+        height: 300px;
+        width: 400px;
+        padding: 1px;
+    }
+
+    .model-viewer-model model-viewer{
+        height: 300px;
+        width: 300px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -400,16 +428,11 @@ button:active{
     margin-bottom: 20px;
 }
 
-.model-viewer model-viewer{
-    height: 600px;
-    width: 600px;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .model-viewer-model{
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: auto;
     padding: 1px;
 }
