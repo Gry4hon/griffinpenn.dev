@@ -190,7 +190,7 @@ button:active{
 
 
 .home-page-body{
-    height: 90vh;
+    height: 88vh;
     background-color: #EDECE0;
     padding: 1px;
     width: auto;
@@ -278,13 +278,12 @@ button:active{
 
 .home-page-buttons button{
     background-color: #4B2F73;
-
+    margin-top: 20px;
     border-radius: 10px;
     width: 150px;
-    margin-left: 5%;
 
 }
-.home-page-buttons button a{
+.home-page-buttons a button{
     text-decoration: none;
     color: #EDECE0;
 }
@@ -326,4 +325,30 @@ button:active{
     background-color: #EDECE0;
     border-radius: 10px;
     text-align: center;
+}
+
+.sandbox-body{
+    background-color: #EDECE0;
+}
+
+.sandbox-body-content{
+    height: 88vh;
+    padding: 1px;
+}
+
+.model-viewer{
+    margin-top: 50px;
+    width: 700px;
+    height: 900px;
+    background-color: #4B2F73;
+    border-radius: 10px;
+}
+
+.model-viewer model-viewer{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
 }

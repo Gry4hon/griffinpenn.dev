@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <title>griffinpenn.dev</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="sandbox-body">
+    <div class="header sticky-top">
+        <a href="index.html" style="text-decoration: none;">
+            <h1>Griffin</h1>
+        </a>
+        <div id="custom-nav-text">
+            <button id="nav-button"><a href="projects.html">Portfolio</a></button>
+            <button id="nav-button"><a href="aboutme.html">About Me</a></button>
+            <button id="nav-button"><a href="contact.html">Contact me</a></button>
+        </div>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-button" onclick="MakeVisiable()">|||</button>
+            <div id="custom-dropdown-content">
+                <a href="projects.html">Portfolio</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contact.html">Contact me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid sandbox-body-content">
+        <div class="model-viewer container">
+           
+            <model-viewer src="images/logo3D.glb" crossorigin="anonymous" camera-controls ></model-viewer>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+
+    <script>
+
+
+
+
+        let numberOfClicks = 0;
+
+        function MakeVisiable() {
+            let dropDownContent = document.getElementById('custom-dropdown-content');
+
+            numberOfClicks += 1;
+
+            if (numberOfClicks % 2 == 0) {
+                dropDownContent.style.visibility = 'hidden';
+            } else {
+                dropDownContent.style.visibility = 'visible';
+            }
+
+        }
+    </script>
+</body>
+<footer>
+    <div class="custom-footer-class">
+        <p>Copyright Griffin Penn 2023 &copy;</p>
+        <p>I love you Abby </p>
+    </div>
+</footer>
+
+</html>
