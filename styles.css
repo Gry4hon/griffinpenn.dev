@@ -224,6 +224,7 @@ button:active{
     background-blend-mode: saturation;
     background-size: 100vw 100%;
     height: auto;
+    padding: 1px;
 }
 
 .body-aboutme{
@@ -233,6 +234,23 @@ button:active{
     background-blend-mode: saturation;
     background-size: 100vw 100%;
     height: auto;
+}
+
+.aboutme-content{
+    height: auto;
+    background-color: #EDECE0;
+    padding: 1px;
+}
+
+.aboutme-content h2{
+    text-align: center;
+    color: #010326; 
+    padding-top: 30px;
+}
+
+.aboutme-content{
+    height: 60vh;
+    background-color: #EDECE0;
 }
 
 .body-contactme{
