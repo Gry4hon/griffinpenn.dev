@@ -265,7 +265,8 @@ button:active{
 }
 
 .aboutme-content{
-    height: 60vh;
+    height: auto;
+    padding-bottom: 10pc;
     background-color: #EDECE0;
 }
 
