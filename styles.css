@@ -257,6 +257,8 @@ button:active{
 
 #body-contactme{
     margin-top: 70px;
+    height: auto;
+    padding-bottom: 50vh;
 }
 
 .body-welcome{
@@ -333,6 +335,7 @@ button:active{
     background-size: 100vw 100%;
     height: auto;
     padding-top: 15px;
+    padding-bottom: 50vh;
 }
 
 .home-page-buttons button{
@@ -387,14 +390,13 @@ button:active{
     text-align: center;
 }
 
-.sandbox-body{
-    background-color: #EDECE0;
-}
+
 
 .sandbox-body-content{
     height: auto;
     padding: 1px;
     padding-bottom: 50px;
+    background-color: #EDECE0;
 }
 
 .sandbox-body-content h2{
@@ -411,7 +413,7 @@ button:active{
     border-radius: 10px;
     padding: 1px;
     color: #EDECE0;
-
+    font-size: 20px;
 }
 
 .model-viewer article{
