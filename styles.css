@@ -28,6 +28,15 @@ html{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
+.header-logo{
+    margin-left: 30px;
+}
+
+.header-logo img{
+    width: 70px;
+    height: 70px;
+}
+
 .header h1{
     padding-top: 15px;
     padding-left: 50px;
@@ -106,6 +115,16 @@ button:active{
         height: 600px;
         width: 600px;
         border: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .email-form{
+        width: 500px;
+        height: 30vh;
+        background-color: #EDECE0;
+        border-radius: 10px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -232,7 +251,6 @@ button:active{
 
 .home-page-body{
     height: auto;
-    padding-bottom: 15px;
     background-color: #EDECE0;
     padding: 1px;
     width: auto;
@@ -241,7 +259,7 @@ button:active{
     margin-top: 20px;
     padding: 1px;
     height: auto;
-
+    padding-bottom: 40vh;
 }
 
 .home-page-text{
@@ -258,7 +276,6 @@ button:active{
 #body-contactme{
     margin-top: 70px;
     height: auto;
-    padding-bottom: 50vh;
 }
 
 .body-welcome{
@@ -319,8 +336,7 @@ button:active{
     background-blend-mode: saturation;
     background-size: 100vw 100%;
     height: auto;
-    overflow: hidden;
-    padding-bottom: 40vh;
+    padding-bottom: 42vh;
 }
 
 .body-contactme p{
@@ -368,27 +384,25 @@ button:active{
 
 .home-image{
     background-image: url(images/backgroundart.png);
-    background-size: 35vw 100%;
+    background-size: 50vw 100%;
     background-repeat: no-repeat;
 }
 
 .custom-footer-class{
     background-color: #4B2F73;
     color: #EDECE0;
-    text-align: center;
-    height: 80px;
-    width: auto;
+    height: auto;
+    width: 100%;
     padding-top: 5px;
     padding: 1px;
 }
 
-.email-form{
-    width: auto;
-    height: 30vh;
-    background-color: #EDECE0;
-    border-radius: 10px;
+.footer-copyright{
     text-align: center;
+    padding: 1px;
 }
+
+
 
 
 
@@ -439,3 +453,56 @@ button:active{
     height: auto;
     padding: 1px;
 }
+
+
+#app-border{
+    width: 50px;
+    height: 50px;
+    background-color: #4B2F73;
+    border-radius: 10px;
+    border: 3px solid #EDECE0;
+    margin-right: 40px;
+}
+
+#app-border:hover{
+    background-color: #0077B5;
+    border: 1px solid #0077B5;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+
+.socials-buttons{
+    display:flex;
+    width: 500px;
+    height: auto;
+    padding: auto;
+    margin-top: 20px;
+}
+
+.socials-buttons p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: #EDECE0;
+}
+
+.socials-buttons a{
+    text-decoration: none;
+}
+
+.github-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #4B2F73;
+}
+
+.github-image:hover{
+    background-color: #EDECE0;
+}
+
+
+
+

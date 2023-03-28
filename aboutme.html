@@ -9,14 +9,16 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <title>griffinpenn.dev</title>
-
+    <link rel="icon" type="image/x-icon" href="images/actual-logo.jpg">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
     <div class="header sticky-top">
         <a href="index.html" style="text-decoration: none;">
-            <h1>Griffin</h1>
+            <div class="header-logo">
+                <img src="images/actual-logo.jpg" class="img-fluid">
+            </div>
         </a>
         <div id="custom-nav-text">
             <button id="nav-button"><a href="projects.html">Portfolio</a></button>
@@ -180,9 +182,15 @@
     </script>
 </body>
 <footer>
-    <div class="custom-footer-class">
-        <br>
-        <p>Copyright Griffin Penn 2023 &copy;</p>
+    <div class="custom-footer-class container-fluid">
+        <div class="socials-buttons container-fluid justify-content-center">
+            <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/"><p id="app-border"> in </p></a>
+            <a href="https://github.com/Gry4hon?tab=repositories"><img src="images/github-mark.png" width="50px" height="50px" class="github-image"></a>
+        </div>
+        <div class="footer-copyright">
+            <p>Griffin Penn &copy; 2023</p>
+        </div>
+        
     </div>
 </footer>
 
