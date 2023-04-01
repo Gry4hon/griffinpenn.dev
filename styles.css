@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+.custom-body{
+    background-color: #4B2F73;
+}
+
 html{
     font-family: Helvetica, Lato;
 }
