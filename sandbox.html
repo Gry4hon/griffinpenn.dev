@@ -19,30 +19,38 @@
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
+<header>
 
-<body class="custom-body">
     <div class="header sticky-top">
         <a href="index.html" style="text-decoration: none;">
             <div class="header-logo">
                 <img src="images/actual-logo.jpg" class="img-fluid">
             </div>
         </a>
-        <div id="custom-nav-text">
-            <button id="nav-button"><a href="projects.html">Portfolio</a></button>
-            <button id="nav-button"><a href="aboutme.html">About Me</a></button>
-            <button id="nav-button"><a href="contact.html">Contact me</a></button>
-            <button id="nav-button"><a href="sandbox.html">Sandbox</a></button>
-        </div>
-        <div class="custom-dropdown">
-            <button class="custom-dropdown-button" onclick="MakeVisiable()">|||</button>
-            <div id="custom-dropdown-content">
-                <a href="projects.html">Portfolio</a>
-                <a href="aboutme.html">About Me</a>
-                <a href="contact.html">Contact me</a>
-                <a href="sandbox.html">Sandbox</a>
+        <div class="container justify-content-center d-flex">
+            <div id="custom-nav-text">
+                <button id="nav-button"><a href="projects.html">Portfolio</a></button>
+                <button id="nav-button"><a href="aboutme.html">About Me</a></button>
+                <button id="nav-button"><a href="contact.html">Contact me</a></button>
+                <button id="nav-button"><a href="sandbox.html">Sandbox</a></button>
+            </div>
+            <div class="custom-dropdown">
+                <button class="custom-dropdown-button" onclick="MakeVisiable()">|||</button>
+                <div id="custom-dropdown-content">
+                    <a href="projects.html">Portfolio</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="contact.html">Contact me</a>
+                    <a href="sandbox.html">Sandbox</a>
+                </div>
             </div>
         </div>
     </div>
+
+
+</header>
+
+<body class="custom-body">
+
 
 
     <div class="sandbox-body-content container-fluid ">
@@ -120,13 +128,16 @@
 <footer>
     <div class="custom-footer-class container-fluid">
         <div class="socials-buttons container-fluid justify-content-center">
-            <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/"><p id="app-border"> in </p></a>
-            <a href="https://github.com/Gry4hon?tab=repositories"><img src="images/github-mark.png" width="50px" height="50px" class="github-image"></a>
+            <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/">
+                <p id="app-border"> in </p>
+            </a>
+            <a href="https://github.com/Gry4hon?tab=repositories"><img src="images/github-mark.png" width="50px"
+                    height="50px" class="github-image"></a>
         </div>
         <div class="footer-copyright">
             <p>Griffin Penn &copy; 2023</p>
         </div>
-        
+
     </div>
 </footer>
 
