@@ -40,23 +40,47 @@
     <div class="body-contactme container-fluid ">
         <div class="custom-page-header" id="contact-header">
             <h2>Contact me</h2>
-        </div>
-        <div class="container" style="margin-top: 90px;">
-            <form class="email-form">
-                <p>email me</p>
-                <label for="email">Email: </label>
-                <input id="email" type="email">
 
-                <input id="email" type="text" placeholder="What ya want to tell me">
-
-                <input type="submit" title="send">
-            </form>
         </div>
+        <div class="container">
+            <div class="contact-header-text">
+                <p>
+                    Get in contact with me! I'm always open to chat about what I do professionally. 
+                </p>
+            </div>
+            
+        </div>
+        <form class="email-form" action="https://formsubmit.co/griffinpenndev@gmail.com" method="POST">
+
+            <div class="container">
+                <div class="row">
+                    <div class="custom-form-row">
+                        <input name="name" id="name-input" type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="row custom-form-row">
+                    <div class="custom-form-row">
+                        <input name="email" id="email-input" type="email" placeholder="Email">
+                    </div>
+                </div>
+               
+                <div class="row input-divide">
+                    <div class="custom-form-row">
+                        <input name="subject" id="subject-input" type="text" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="custom-form-row">
+                        <input name="message" id="message-input" type="text" placeholder="Message">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" title="send">
+                </div>
+            </div>
+        </form>
     </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
