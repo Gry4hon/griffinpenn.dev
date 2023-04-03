@@ -163,6 +163,7 @@ button:active {
         z-index: 10;
         position: absolute;
         margin-left: 200px;
+        visibility: hidden;
     }
 
 }
@@ -175,6 +176,7 @@ button:active {
         z-index: 10;
         position: absolute;
         margin-left: 50px;
+        visibility: hidden;
     }
 }
 
@@ -326,6 +328,7 @@ button:active {
         z-index: 10;
         position: absolute;
         margin-left: 10px;
+        visibility: hidden;
     }
 
 }
