@@ -82,7 +82,7 @@
                         the intercetion between liberal arts and technology. The brackets on either side of the pen are
                         found within the symbol for
                         coding. This being the <strong>"
-                            < / >"
+                            < />"
                         </strong> symbol. The pen in the middle is modeled after a
                         drawing tablet pen that
                         I have known as the Wacom Cintiq 13d tablet. These two symbols being combined represent that I
@@ -130,7 +130,7 @@
             <br>
             <div class="container body-articles">
                 <article>
-                    <h3>My personal philosopy</h3>
+                    <h3>My Personal Programming Philosopy</h3>
                     <br>
                     <p>
                         When it comes to software development, my personal philosopy is to program before I code. The
@@ -141,15 +141,108 @@
                         and laying out resources is created by an architect. This is the analogy I visualize that helps
                         with the next
                         step of
-                        development: coding. Now coding is the next natrual step I take after programming, for it is
+                        development: coding. Now coding is the next natrual step taken after programming, for it is
                         much like the construction crew
-                        that creates the structure given the plans given to them by the architect.
+                        that creates the structure given the plans given to them by the architect. This process is an
+                        example of
+                        the intercetion I consider myself apart of.
                     </p>
                 </article>
             </div>
 
         </div>
         <br>
+    </div>
+    <div class="aboutme-container container-fluid">
+        <div class="aboutme-content container">
+
+            <h2>My Passions</h2>
+            <br>
+
+
+            <br>
+
+            <div class="container keyboards-explaination">
+                <div class="row">
+                    <div class="col">
+                        <h3>Why keyboards?</h3>
+                        <p>
+                            Those who know me will probably say one thing: this guy has a lot of keyboards. It is true.
+                            One of
+                            my many passions happens to be building and modding custom mechanical keyboards, but why?
+                            Many people will find
+                            out how much I pay for some of these keyboards, and call it silly to invest in something so
+                            trivial like a keyboard.
+                        </p>
+                        <p style="margin-top: 30px;">
+                            Though it is a valid opition, think about it this way.
+                        </p>
+
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-center keyboard-explaination-pic">
+                            <img onclick="PlayKeyboardSound()" src="images/endgame_keyboard.PNG">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 16px;">
+                    <p>
+                        Simply put if I'm going to use a device or tool everyday I would want it to be of a high
+                        quality. I
+                        would assume many invest in a top of the line computer or car for the same reason,
+                        dependability as well as
+                        asthetics. The same can be said about my
+                        passion for owning a higher end keyboard.
+                    </p>
+                </div>
+            </div>
+            <h2>My Keyboards</h2>
+            <div class="container keyboard-container">
+                <div id="first-keyboard" class="keyboard-info-container">
+                    <p>
+                        Simply put if I'm going to use a device or tool everyday I would want it to be of a high
+                        quality. I
+                        would assume many invest in a top of the line computer or car for the same reason,
+                        dependability as well as
+                        asthetics. The same can be said about my
+                        passion for owning a higher end keyboard.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="keyboard-pic">
+                            <img src="images/first_keyboard.PNG" alt="my first 60% keyboard">
+
+                        </div>
+                    </div>
+                    <div class="col keyboard-pic">
+                        <img src="images/seventy_five_percent_keyboard.PNG" alt="my first 75% keyboard">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="keyboard-pic">
+                            <img src="images/shiny_keyboard.PNG" alt="my second 60% keyboard">
+                        </div>
+                    </div>
+                    <div class="col keyboard-pic">
+                        <img src="images/fullsized_keyboard.PNG"
+                            alt="fullsized mechanical keyboard, a gift from the love of my life">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="keyboard-pic">
+                            <img src="images/fourty_percent.PNG" alt="my first 40% keyboard">
+                        </div>
+                    </div>
+                    <div class="col keyboard-pic">
+                        <img src="images/endgame_keyboard.PNG" alt="my first 75% keyboard">
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
@@ -179,18 +272,73 @@
             }
 
         }
+
+        function PlayKeyboardSound() {
+            let randomSoundNum = Math.random() * (10 - 1) + 1;
+            let randomAudioFile;
+            switch (Math.floor(randomSoundNum)) {
+                case 1:
+                    randomAudioFile = "sounds/E_key_1.mp3";
+                    console.log("1");
+                    break;
+                case 2:
+                    randomAudioFile = "sounds/E_key_2.mp3";
+                    console.log("2");
+                    break;
+                case 3:
+                    randomAudioFile = "sounds/E_key_3.mp3";
+                    console.log("3 wsdfsdfg");
+                    break;
+                case 4:
+                    randomAudioFile = "sounds/E_key_4.mp3";
+                    console.log("4");
+                    break;
+                case 5:
+                    randomAudioFile = "sounds/E_key_5.mp3";
+                    console.log("5");
+                    break;
+                case 6:
+                    randomAudioFile = "sounds/E_key_6.mp3";
+                    console.log("6");
+                    break;
+                case 7:
+                    randomAudioFile = "sounds/E_key_7.mp3";
+                    console.log("7");
+                    break;
+                case 8:
+                    randomAudioFile = "sounds/E_key_8.mp3";
+                    console.log("8");
+                    break;
+                case 9:
+                    randomAudioFile = "sounds/E_key_9.mp3";
+                    console.log("9");
+                    break;
+                case 10:
+                    randomAudioFile = "sounds/E_key_10.mp3";
+                    console.log("10");
+                    break;
+
+            }
+            //console.log(randomAudioFile);
+            let keyboardClick = new Audio(randomAudioFile);
+            keyboardClick.play();
+
+        }
     </script>
 </body>
 <footer>
     <div class="custom-footer-class container-fluid">
         <div class="socials-buttons container-fluid justify-content-center">
-            <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/"><p id="app-border"> in </p></a>
-            <a href="https://github.com/Gry4hon?tab=repositories"><img src="images/github-mark.png" width="50px" height="50px" class="github-image"></a>
+            <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/">
+                <p id="app-border"> in </p>
+            </a>
+            <a href="https://github.com/Gry4hon?tab=repositories"><img src="images/github-mark.png" width="50px"
+                    height="50px" class="github-image"></a>
         </div>
         <div class="footer-copyright">
             <p>Griffin Penn &copy; 2023</p>
         </div>
-        
+
     </div>
 </footer>
 
