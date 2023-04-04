@@ -29,7 +29,7 @@ html {
     background-color: #4B2F73;
     color: #EDECE0;
     height: 75px;
-    
+
 }
 
 .header-logo {
@@ -103,6 +103,8 @@ button:active {
 }
 
 @media only screen and (min-width: 850px) {
+
+    /*All pages resize styles*/
     #custom-dropdown-content a {
         visibility: hidden;
     }
@@ -110,6 +112,8 @@ button:active {
     .content-text-mobile {
         display: none;
     }
+
+    /*About Me page resize styles*/
 
     #aboutme-logo-explaination {
         margin-top: 150px;
@@ -124,6 +128,39 @@ button:active {
         margin-right: auto;
     }
 
+    .keyboard-explaination-pic img {
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 50px;
+        width: 740px;
+        height: 300px;
+    }
+
+    .keyboard-pic img {
+        width: 470px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .keyboard-pic img:hover {
+        width: 480px;
+        height: 205px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .keyboard-info-container {
+        width: 700px;
+        height: 500px;
+        background-color: #8C5679;
+        z-index: 10;
+        position: absolute;
+        margin-left: 200px;
+        visibility: hidden;
+    }
+
+
+
+    /*Contact Me page resize styles*/
     .email-form {
         width: 700px;
         height: auto;
@@ -136,55 +173,25 @@ button:active {
         margin-top: 30px;
     }
 
-    .keyboard-explaination-pic img{
-        border-radius: 10px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        margin-top: 50px;
-    }
-
-    .keyboard-pic img{
-        margin: 50px;
-        width: 500px;
-        height: 200px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-    }
-
-    .keyboard-pic img:hover{
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        width: 505px;
-        height: 205px;
-    }
-
-
-
-    .keyboard-info-container{
-        width: 700px;
-        height: 500px;
-        background-color: #8C5679;
-        z-index: 10;
-        position: absolute;
-        margin-left: 200px;
-        visibility: hidden;
-    }
-
-    .portfolio_images img{
+    /*Portfolio page resize styles*/
+    .portfolio_images img {
         width: 470px;
         height: 200px;
         border-radius: 10px;
     }
-    
-    .portfolio_images img:hover{
+
+    .portfolio_images img:hover {
         width: 480px;
         height: 205px;
-    
         box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
     }
 
 }
 
 @media only screen and (max-width: 1395px) {
-    .keyboard-info-container{
+
+    /*About Me page resize styles*/
+    .keyboard-info-container {
         width: 700px;
         height: 500px;
         background-color: #8C5679;
@@ -282,24 +289,16 @@ button:active {
         margin-top: 15px;
     }
 
-    #aboutme-logo-explaination {
-        margin-bottom: -150px;
-    }
+
 
     .body-welcome {
         padding-bottom: 10px;
     }
 
-    .model-viewer model-viewer {
-        height: 200px;
-        width: 200px;
-    }
 
-    .aboutme-model model-viewer {
-        height: 300px;
-        width: 400px;
-        padding: 1px;
-    }
+
+
+    /*Sandbox/About Me page resize styles*/
 
     .model-viewer-model model-viewer {
         height: 300px;
@@ -308,6 +307,13 @@ button:active {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .model-viewer model-viewer {
+        height: 200px;
+        width: 200px;
+    }
+
+    /*Contact Me page resize styles*/
 
     .email-form {
         width: auto;
@@ -321,22 +327,30 @@ button:active {
         margin-top: 30px;
     }
 
-    .keyboard-explaination-pic img{
-        border-radius: 10px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        width: 450px;
-        height: 200px;
-    }
 
-    .keyboard-pic img{
-        width: 420px;
-        height: 180px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    /*About Me page resize styles*/
+
+    .keyboard-explaination-pic img {
         border-radius: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 310px;
+        height: 155px;
     }
 
-    .keyboard-info-container{
+    .keyboard-pic img {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .keyboard-pic img {
+        width: 310px;
+        height: 155px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .keyboard-info-container {
         width: 400px;
         height: 800px;
         background-color: #8C5679;
@@ -346,22 +360,79 @@ button:active {
         visibility: hidden;
     }
 
-    .portfolio_images img{
+    .aboutme-model model-viewer {
+        height: 300px;
+        width: 400px;
+        padding: 1px;
+    }
+
+    #aboutme-logo-explaination {
+        margin-bottom: -150px;
+    }
+
+
+
+
+    /*Portfolio page resize styles*/
+
+    .portfolio_images img {
         width: 300px;
         height: 150px;
         border-radius: 10px;
     }
-    
-    .portfolio_images img:hover{
+
+    .portfolio_images img:hover {
         width: 310px;
         height: 155px;
-    
         box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
     }
 
 }
 
+/* All Page Styles */
 
+.custom-page-header h2 {
+    text-align: center;
+    color: #EDECE0;
+    padding-top: 50px;
+}
+
+.body-articles {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    height: auto;
+    color: #EDECE0;
+    font-size: 20px;
+}
+
+.custom-footer-class {
+    background-color: #4B2F73;
+    color: #EDECE0;
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    padding: 1px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 1px;
+}
+
+
+
+/* Home/Index Page Styles */
+
+.body-welcome {
+    background-image: url("images/theCrossroads.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(66, 55, 140, 0.9);
+    background-blend-mode: saturation;
+    background-size: 100vw 100%;
+    height: auto;
+    padding: 1px;
+    padding-bottom: 290px;
+}
 
 .home-page-body {
     height: auto;
@@ -382,23 +453,37 @@ button:active {
     margin-top: 40%;
 }
 
-.custom-page-header h2 {
-    text-align: center;
-    color: #EDECE0;
-    padding-top: 50px;
-}
-
-
-.body-welcome {
-    background-image: url("images/theCrossroads.jpg");
+.home-image {
+    background-image: url(images/backgroundart.png);
+    background-size: 50vw 100%;
     background-repeat: no-repeat;
-    background-color: rgba(66, 55, 140, 0.9);
-    background-blend-mode: saturation;
-    background-size: 100vw 100%;
-    height: auto;
-    padding: 1px;
-    padding-bottom: 290px;
 }
+
+.home-page-buttons button {
+    background-color: #4B2F73;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150px;
+
+}
+
+.home-page-buttons a button {
+    text-decoration: none;
+    color: #EDECE0;
+}
+
+.home-page-buttons button:hover {
+    background-color: gray;
+}
+
+.home-page-buttons button a:hover {
+    color: #42378C;
+}
+
+
+
+
+/*About Me Page Styles*/
 
 .body-aboutme {
     background-image: url("images/monkeying_around.JPG");
@@ -414,30 +499,6 @@ button:active {
     background-color: #EDECE0;
     padding: 1px;
 }
-
-.keyboards-explaination{
-    margin-top: 70px;
-    margin-bottom: 60px;
-    font-size: 20px;
-}
-
-.keyboard-container{
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: 20px;
-}
-
-
-
-.custom-row-container{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 
 .aboutme-content h2 {
     text-align: center;
@@ -462,6 +523,57 @@ button:active {
     padding: 1px;
 }
 
+.keyboards-explaination {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.keyboard-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 20px;
+}
+
+.keyboard-pic {
+    padding: 1px;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.keyboard-explaination-pic:active {
+    animation: explaination-pic-shake 0.2s;
+}
+
+@keyframes explaination-pic-shake {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(5px)
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+
+    /*Animation from https://unused-css.com/blog/css-shake-animation/*/
+}
+
+
+/*Contact Me Page Styles*/
 .body-contactme {
     background-image: url("images/communication.jpg");
     background-repeat: no-repeat;
@@ -472,7 +584,7 @@ button:active {
     padding-bottom: 15vh;
 }
 
-.contact-header-text{
+.contact-header-text {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 100px;
@@ -480,12 +592,23 @@ button:active {
     text-align: center;
 }
 
-.input-divide{
+.input-divide {
     margin-top: 30px;
     margin-bottom: -15px;
 }
 
+.custom-form-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
 
+
+
+
+/*Portfolio Page Styles*/
 .body-portfolio {
     background-image: url("images/inProgress.PNG");
     background-repeat: no-repeat;
@@ -497,7 +620,7 @@ button:active {
     padding-bottom: 50vh;
 }
 
-.portfolio_images{
+.portfolio_images {
     padding: 1px;
     width: auto;
     height: auto;
@@ -505,84 +628,28 @@ button:active {
     margin-bottom: 50px;
 }
 
-.portfolio_images:hover h5{
+.portfolio_images:hover h5 {
     font-size: 25px;
     text-decoration: underline;
 }
 
 
 
-.portfolio_images h5{
+.portfolio_images h5 {
     text-align: center;
-    color: #EDECE0; 
+    color: #EDECE0;
     font-size: 18px;
     margin-top: 15px;
 }
 
-.home-page-buttons button {
-    background-color: #4B2F73;
-    margin-top: 20px;
-    border-radius: 10px;
-    width: 150px;
-
-}
-
-.home-page-buttons a button {
-    text-decoration: none;
-    color: #EDECE0;
-}
-
-.home-page-buttons button:hover {
-    background-color: gray;
-}
-
-.home-page-buttons button a:hover {
-    color: #42378C;
-}
-
-.body-articles {
-    margin-top: 5%;
-    margin-bottom: 3%;
-    height: auto;
-    color: #EDECE0;
-    font-size: 20px;
-}
-
-.home-image {
-    background-image: url(images/backgroundart.png);
-    background-size: 50vw 100%;
-    background-repeat: no-repeat;
-}
-
-.custom-footer-class {
-    background-color: #4B2F73;
-    color: #EDECE0;
-    height: auto;
-    width: 100%;
-    padding-top: 5px;
-    padding: 1px;
-}
-
-.footer-copyright {
-    text-align: center;
-    padding: 1px;
-}
 
 
-.custom-form-row{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.custom-form-row input{
+.custom-form-row input {
     text-align: start;
     width: 80%;
 }
 
-#message-input{
+#message-input {
     padding-bottom: 250px;
 }
 
@@ -687,6 +754,8 @@ button:active {
     background-color: #EDECE0;
 }
 
+
+/* Sandbox style rules */
 .flip-container {
     position: relative;
     margin: 10px auto;
@@ -694,21 +763,23 @@ button:active {
     height: 200px;
     z-index: 1;
     perspective: 1000;
-  }
-  .flip-container-content {
+}
+
+.flip-container-content {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
-  }
-  
-  .face {
+}
+
+.face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  .face.back {
+}
+
+.face.back {
     display: block;
     transform: rotateY(180deg);
     box-sizing: border-box;
@@ -716,11 +787,12 @@ button:active {
     color: white;
     text-align: center;
     background-color: #8C5679;
-  }
-  .face.front{
+}
+
+.face.front {
     background-color: #EDECE0;
     transform: rotateY(0deg);
     color: #010326;
     text-align: center;
     padding: 10px;
-  }
+}
