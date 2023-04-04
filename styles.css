@@ -536,13 +536,7 @@ button:active {
     margin: 20px;
 }
 
-.keyboard-pic {
-    padding: 1px;
-    width: auto;
-    height: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
+
 
 .keyboard-explaination-pic:active {
     animation: explaination-pic-shake 0.2s;
@@ -570,6 +564,64 @@ button:active {
     }
 
     /*Animation from https://unused-css.com/blog/css-shake-animation/*/
+}
+
+.keyboard-pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.keyboard-pic.key-front{
+    background-color: #EDECE0;
+    transform: rotateY(0deg);
+    color: #010326;
+    text-align: center;
+    padding: 10px;
+}
+
+.keyboard-pic.key-back{
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: #EDECE0;
+    border-radius: 10px;
+    background-color: #4B2F73;
+}
+
+.keyboard-pic.key-back p{
+    margin-top: -2px;
+    margin-bottom: -2px;
+    font-size: 13px;
+}
+
+.keyboard-pic.key-back a{
+    color: #EDECE0;
+    text-decoration: none;
+}
+
+.keyboard-pic.key-back a:hover{
+    color: #c0bfb1;
+    text-decoration: underline;
+}
+
+.keyboard-flip-container{
+    width: 480px;
+    height: 205px;
+    z-index: 1;
+    perspective: 1000;
+    position: relative;
+    margin: 10px auto;
+}
+
+.keyboard-flip-container-content{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
 }
 
 
