@@ -569,7 +569,7 @@ button:active {
 .keyboard-pic {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     backface-visibility: hidden;
     margin-top: 30px;
     margin-bottom: 50px;
