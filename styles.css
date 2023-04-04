@@ -156,6 +156,8 @@ button:active {
         height: 205px;
     }
 
+
+
     .keyboard-info-container{
         width: 700px;
         height: 500px;
@@ -164,6 +166,19 @@ button:active {
         position: absolute;
         margin-left: 200px;
         visibility: hidden;
+    }
+
+    .portfolio_images img{
+        width: 470px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    
+    .portfolio_images img:hover{
+        width: 480px;
+        height: 205px;
+    
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
     }
 
 }
@@ -331,6 +346,19 @@ button:active {
         visibility: hidden;
     }
 
+    .portfolio_images img{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    
+    .portfolio_images img:hover{
+        width: 310px;
+        height: 155px;
+    
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
+    }
+
 }
 
 
@@ -467,6 +495,28 @@ button:active {
     height: auto;
     padding-top: 15px;
     padding-bottom: 50vh;
+}
+
+.portfolio_images{
+    padding: 1px;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.portfolio_images:hover h5{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+
+.portfolio_images h5{
+    text-align: center;
+    color: #EDECE0; 
+    font-size: 18px;
+    margin-top: 15px;
 }
 
 .home-page-buttons button {
@@ -640,7 +690,7 @@ button:active {
 .flip-container {
     position: relative;
     margin: 10px auto;
-    width: 200px;
+    width: 700px;
     height: 200px;
     z-index: 1;
     perspective: 1000;
@@ -651,10 +701,7 @@ button:active {
     transform-style: preserve-3d;
     transition: all 1.0s linear;
   }
-  .flip-container:hover .flip-container-content {
-    transform: rotateY(180deg);
-    box-shadow: -5px 5px 5px #aaa;
-  }
+  
   .face {
     position: absolute;
     width: 100%;
@@ -668,11 +715,12 @@ button:active {
     padding: 10px;
     color: white;
     text-align: center;
-    background-color: #00F;
+    background-color: #8C5679;
   }
   .face.front{
-    background-color: #F00;
-    color: #FFF;
+    background-color: #EDECE0;
+    transform: rotateY(0deg);
+    color: #010326;
     text-align: center;
     padding: 10px;
   }

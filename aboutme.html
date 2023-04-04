@@ -207,11 +207,12 @@
                         asthetics. The same can be said about my
                         passion for owning a higher end keyboard.
                     </p>
+                    <button onclick="document.getElementById('first-keyboard').style.visibility = 'hidden'">Close</button>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="keyboard-pic">
-                            <img src="images/first_keyboard.PNG" alt="my first 60% keyboard">
+                            <img src="images/first_keyboard.PNG" alt="my first 60% keyboard" onclick="document.getElementById('first-keyboard').style.visibility = 'visible'">
                         </div>
                     </div>
                     <div class="col keyboard-pic">
@@ -258,7 +259,7 @@
         crossorigin="anonymous"></script>
     <script>
         let numberOfClicks = 0;
-        //let myFirstKeyboard = document.getElementById('first-keyboard').visibility = hidden;
+        
         function MakeVisiable() {
             let dropDownContent = document.getElementById('custom-dropdown-content');
 
@@ -273,54 +274,14 @@
         }
 
         function PlayKeyboardSound() {
-            let randomSoundNum = Math.random() * (10 - 1) + 1;
-            let randomAudioFile;
-            switch (Math.floor(randomSoundNum)) {
-                case 1:
-                    randomAudioFile = "sounds/E_key_1.mp3";
-                    console.log("1");
-                    break;
-                case 2:
-                    randomAudioFile = "sounds/E_key_2.mp3";
-                    console.log("2");
-                    break;
-                case 3:
-                    randomAudioFile = "sounds/E_key_3.mp3";
-                    console.log("3 wsdfsdfg");
-                    break;
-                case 4:
-                    randomAudioFile = "sounds/E_key_4.mp3";
-                    console.log("4");
-                    break;
-                case 5:
-                    randomAudioFile = "sounds/E_key_5.mp3";
-                    console.log("5");
-                    break;
-                case 6:
-                    randomAudioFile = "sounds/E_key_6.mp3";
-                    console.log("6");
-                    break;
-                case 7:
-                    randomAudioFile = "sounds/E_key_7.mp3";
-                    console.log("7");
-                    break;
-                case 8:
-                    randomAudioFile = "sounds/E_key_8.mp3";
-                    console.log("8");
-                    break;
-                case 9:
-                    randomAudioFile = "sounds/E_key_9.mp3";
-                    console.log("9");
-                    break;
-                case 10:
-                    randomAudioFile = "sounds/E_key_10.mp3";
-                    console.log("10");
-                    break;
+            const minRandomNumber = 1;
+            const maxRandomNumber = 10;
 
-            }
-            //console.log(randomAudioFile);
-            let keyboardClick = new Audio(randomAudioFile);
-            keyboardClick.play();
+            let randomSoundNum = Math.random() * (maxRandomNumber - minRandomNumber) + minRandomNumber;
+            let randomAudioFile = "sounds/E_key_"+ Math.floor(randomSoundNum).toString()+".mp3";
+
+            let keyboardClickSound = new Audio(randomAudioFile);
+            keyboardClickSound.play();
 
         }
     </script>

@@ -106,34 +106,40 @@
             </article>
         </div>
 
+        <!---->
+
         <div class="model-viewer container">
             <div class="flip-container">
-                <div class="flip-container-content">
-                    <div class="front face">
+                <div class="flip-container-content" id="card">
+                    <div class="front face" onclick="document.getElementById('card').style.transform = 'rotateY(180deg)'">
                         Hello
                     </div>
 
-                    <div class="back face">
+                    <div class="back face" onclick="document.getElementById('card').style.transform = 'rotateY(0deg)'">
                         Worm :D
+                        
                     </div>
                 </div>
             </div>
             <br>
             <article>
                 <h4>Flipping out over this :D!</h4>
-                <h5>4/2/2022</h5>
+                <h5>4/3/2022</h5>
                 <br>
                 <p>
-                    
+                    Today I looked into creating custom flipping animations for pictures of my keyboards on my About Me page.
+                    The design was to have one side be the picture of the keyboard, and the other to explain what it's called,
+                    what the specs are, and a quick story about it. I also looked into embeding sound into a website, and added 
+                    that to when you click on the picture it plays a keypress from the actual keyboard. 
                 </p>
                 <p>Links for everything:</p>
                 <ul>
-                    <a href="#">
-                        <li></li>
+                    <a href="https://stackoverflow.com/questions/34833907/how-to-flip-the-div-using-css">
+                        <li>Where I started</li>
                     </a>
                     <a
-                        href="#">
-                        <li></li>
+                        href="https://www.w3schools.com/jsref/prop_style_transform.asp">
+                        <li>Another helpful link</li>
                     </a>
                 </ul>
             </article>
