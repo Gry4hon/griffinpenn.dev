@@ -705,9 +705,27 @@ button:active {
     padding-bottom: 250px;
 }
 
+/*Project page styles */
+.projects-body{
+    
+    height: 1000px;
+    width: 100%;
+    padding: 1px;
+    padding-bottom: 50px;
+    background-color: #EDECE0;
+}
+
+.projects-content{
+    width: auto;
+    height: 50vh;
+    background-color: #4B2F73;
+    color: #EDECE0;
+    margin-top: 70px;
+    border-radius: 10px;
+}
 
 
-
+/*Sandbox styles*/
 
 .sandbox-body-content {
     height: auto;
