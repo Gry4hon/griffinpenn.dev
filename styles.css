@@ -706,21 +706,19 @@ button:active {
 }
 
 /*Project page styles */
+
 .projects-body{
-    
-    height: 1000px;
-    width: 100%;
+    height: auto;
     padding: 1px;
-    padding-bottom: 50px;
+    padding-bottom: 40vh;
     background-color: #EDECE0;
 }
 
 .projects-content{
-    width: auto;
-    height: 50vh;
-    background-color: #4B2F73;
-    color: #EDECE0;
+
+    color: #010326;
     margin-top: 70px;
+    margin-left: 50px;
     border-radius: 10px;
 }
 
