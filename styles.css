@@ -711,6 +711,22 @@ button:active {
     text-align: center;
 }
 
+#email-submit-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4B2F73;
+    color: #EDECE0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email-submit-button:hover{
+    background-color: #42378C;
+    color: #EDECE0;
+
+}
 
 
 
