@@ -423,7 +423,7 @@ button:active {
         perspective: 1000;
         position: relative;
         margin: 10px auto;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
     }
 
     .keyboard-flip-container-content{
