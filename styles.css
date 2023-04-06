@@ -206,6 +206,16 @@ button:active {
     }
 
     /*Portfolio page resize styles*/
+
+    .portfolio_images{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 40px;
+        height: 200px;
+        background-image: url("images/actual-logo.jpg");
+        background-repeat: no-repeat;
+        background-size: 470px 200px;
+    }
+
     .portfolio_images img {
         width: 470px;
         height: 200px;
