@@ -494,8 +494,8 @@ button:active {
     .flip-container {
         position: relative;
         margin: 10px auto;
-        width: 450px;
-        height: 130px;
+        width: 330px;
+        height: 80px;
         z-index: 1;
         perspective: 1000;
     }
