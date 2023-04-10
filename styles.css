@@ -158,15 +158,15 @@ button:active {
         visibility: hidden;
     }
 
-    .keyboard-pic.key-front{
+    .keyboard-pic.key-front {
         background-color: #EDECE0;
         transform: rotateY(0deg);
         color: #010326;
         text-align: center;
         padding: 10px;
     }
-    
-    .keyboard-pic.key-back{
+
+    .keyboard-pic.key-back {
         transform: rotateY(180deg);
         box-sizing: border-box;
         padding: 10px;
@@ -176,7 +176,7 @@ button:active {
         height: auto;
     }
 
-    .keyboard-flip-container{
+    .keyboard-flip-container {
         width: 480px;
         height: 205px;
         z-index: 1;
@@ -185,7 +185,7 @@ button:active {
         margin: 10px auto;
     }
 
-    .keyboard-flip-container-content{
+    .keyboard-flip-container-content {
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
@@ -207,7 +207,7 @@ button:active {
 
     /*Portfolio page resize styles*/
 
-    .portfolio_images{
+    .portfolio_images {
         background-color: rgba(0, 0, 0, 0.7);
         width: 40px;
         height: 200px;
@@ -230,12 +230,22 @@ button:active {
 
     /* Project page resize styles */
 
-    #web-project-view{
+    #web-project-view {
         visibility: visible;
     }
 
-    #mobile-project-view{
+    #mobile-project-view {
         display: none;
+    }
+
+    /* Sandbox Resize Styles */
+    .flip-container {
+        position: relative;
+        margin: 10px auto;
+        width: 700px;
+        height: 200px;
+        z-index: 1;
+        perspective: 1000;
     }
 
 }
@@ -417,7 +427,7 @@ button:active {
         margin-bottom: -150px;
     }
 
-    .keyboard-pic.key-front{
+    .keyboard-pic.key-front {
         background-color: #EDECE0;
         transform: rotateY(0deg);
         color: #010326;
@@ -425,8 +435,8 @@ button:active {
         padding: 10px;
         margin-bottom: 30px;
     }
-    
-    .keyboard-pic.key-back{
+
+    .keyboard-pic.key-back {
         transform: rotateY(180deg);
         box-sizing: border-box;
         padding: 10px;
@@ -437,9 +447,9 @@ button:active {
 
     }
 
-    .keyboard-flip-container{
-        width: 480px;
-        height: 205px;
+    .keyboard-flip-container {
+        width: 3000px;
+        height: 105px;
         z-index: 1;
         perspective: 1000;
         position: relative;
@@ -447,7 +457,7 @@ button:active {
         margin-bottom: 80px;
     }
 
-    .keyboard-flip-container-content{
+    .keyboard-flip-container-content {
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
@@ -470,15 +480,25 @@ button:active {
         box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
     }
 
-        /* Project page resize styles */
+    /* Project page resize styles */
 
-        #web-project-view{
-            display: none;
-        }
-    
-        #mobile-project-view{
-            display: initial;
-        }
+    #web-project-view {
+        display: none;
+    }
+
+    #mobile-project-view {
+        display: initial;
+    }
+
+    /* Sandbox Resize Styles */
+    .flip-container {
+        position: relative;
+        margin: 10px auto;
+        width: 450px;
+        height: 130px;
+        z-index: 1;
+        perspective: 1000;
+    }
 
 }
 
@@ -668,18 +688,18 @@ button:active {
 
 
 
-.keyboard-pic.key-back p{
+.keyboard-pic.key-back p {
     margin-top: -2px;
     margin-bottom: -2px;
     font-size: 13px;
 }
 
-.keyboard-pic.key-back a{
+.keyboard-pic.key-back a {
     color: #EDECE0;
     text-decoration: none;
 }
 
-.keyboard-pic.key-back a:hover{
+.keyboard-pic.key-back a:hover {
     color: #c0bfb1;
     text-decoration: underline;
 }
@@ -721,7 +741,7 @@ button:active {
     text-align: center;
 }
 
-#email-submit-button{
+#email-submit-button {
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -732,7 +752,7 @@ button:active {
     margin-right: auto;
 }
 
-#email-submit-button:hover{
+#email-submit-button:hover {
     background-color: #42378C;
     color: #EDECE0;
 
@@ -787,21 +807,21 @@ button:active {
 
 /*Project page styles */
 
-.projects-body{
+.projects-body {
     height: auto;
     padding: 1px;
     padding-bottom: 40vh;
     background-color: #EDECE0;
 }
 
-.projects-content{
+.projects-content {
     color: #010326;
     margin-top: 70px;
     margin-left: 50px;
     border-radius: 10px;
 }
 
-.project-image img{
+.project-image img {
     width: 1100px;
     height: 900px;
     border-radius: 10px;
@@ -909,14 +929,6 @@ button:active {
 
 
 /* Sandbox style rules */
-.flip-container {
-    position: relative;
-    margin: 10px auto;
-    width: 700px;
-    height: 200px;
-    z-index: 1;
-    perspective: 1000;
-}
 
 .flip-container-content {
     width: 100%;
