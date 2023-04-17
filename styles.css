@@ -244,7 +244,7 @@ button:active {
     #nav-app-body{
         height: auto;
         padding: 1px;
-        padding-bottom: 48vh;
+        padding-bottom: 46vh;
         background-color: #EDECE0;
     }
 
@@ -566,6 +566,12 @@ button:active {
         display: initial;
     }
 
+    #nav-app-body{
+        height: auto;
+        padding: 1px;
+        padding-bottom: 24vh;
+        background-color: #EDECE0;
+    }
 
 
     .team-member-cards{
