@@ -238,7 +238,13 @@ button:active {
     #mndr-project-body{
         height: auto;
         padding: 1px;
-        padding-bottom: 36vh;
+        padding-bottom: 32vh;
+        background-color: #EDECE0;
+    }
+    #nav-app-body{
+        height: auto;
+        padding: 1px;
+        padding-bottom: 48vh;
         background-color: #EDECE0;
     }
 
@@ -929,10 +935,8 @@ button:active {
     border-radius: 10px;
 }
 
-.project-image img {
-    width: 1100px;
-    height: 400px;
-    border-radius: 10px;
+.project-image iframe{
+    margin-top: 70px;
 }
 
 
