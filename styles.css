@@ -229,6 +229,19 @@ button:active {
 
     /* Project page resize styles */
 
+    #short-project-descriptions{
+        height: auto;
+        padding: 1px;
+        padding-bottom: 46vh;
+        background-color: #EDECE0;
+    }
+    #mndr-project-body{
+        height: auto;
+        padding: 1px;
+        padding-bottom: 36vh;
+        background-color: #EDECE0;
+    }
+
     .projects-body {
         height: auto;
         padding: 1px;
