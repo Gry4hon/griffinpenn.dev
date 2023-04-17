@@ -229,12 +229,63 @@ button:active {
 
     /* Project page resize styles */
 
+    .projects-body {
+        height: auto;
+        padding: 1px;
+        padding-bottom: 20vh;
+        background-color: #EDECE0;
+    }
+    
     #web-project-view {
         visibility: visible;
     }
 
     #mobile-project-view {
         display: none;
+    }
+
+    .team-members-container{
+        width: 1850px;
+        height: 300px;
+        padding: 1px;
+        margin-top: 50px;
+    }
+
+    .team-member-cards{
+        width: 20px;
+        height: 350px;
+        padding: 1px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+        background-color: #4B2F73;
+        color: #EDECE0;
+    }
+
+    .team-member-cards img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%; 
+        margin-top: 20px;
+    }
+    .team-member-cards img:hover{
+        border-radius: 100%; 
+        margin-top: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .team-member-cards h4{
+        margin-top: 25px;
+    }
+
+    .team-member-cards a{
+        text-decoration: none;
+        color: #EDECE0;
+    }
+
+    .team-member-cards a:hover{
+        text-decoration: underline;
+        color: #F2C4D0;
     }
 
     /* Sandbox Resize Styles */
@@ -481,6 +532,13 @@ button:active {
 
     /* Project page resize styles */
 
+    .projects-body {
+        height: auto;
+        padding: 1px;
+        padding-bottom: 5vh;
+        background-color: #EDECE0;
+    }
+
     #web-project-view {
         display: none;
     }
@@ -488,6 +546,48 @@ button:active {
     #mobile-project-view {
         display: initial;
     }
+
+
+
+    .team-member-cards{
+        width: auto;
+        height: 350px;
+        padding: 1px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #4B2F73;
+        color: #EDECE0;
+    }
+
+    .team-member-cards img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%; 
+        margin-top: 20px;
+    }
+
+    .team-member-cards img:hover{
+        border-radius: 100%; 
+        margin-top: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .team-member-cards h4{
+        margin-top: 5px;
+    }
+
+    .team-member-cards a{
+        text-decoration: none;
+        color: #EDECE0;
+    }
+
+    .team-member-cards a:hover{
+        text-decoration: underline;
+        color: #F2C4D0;
+    }
+
 
     /* Sandbox Resize Styles */
     .flip-container {
@@ -498,6 +598,8 @@ button:active {
         z-index: 1;
         perspective: 1000;
     }
+
+
 
 }
 
@@ -805,12 +907,7 @@ button:active {
 
 /*Project page styles */
 
-.projects-body {
-    height: auto;
-    padding: 1px;
-    padding-bottom: 40vh;
-    background-color: #EDECE0;
-}
+
 
 .projects-content {
     color: #010326;
@@ -821,7 +918,7 @@ button:active {
 
 .project-image img {
     width: 1100px;
-    height: 900px;
+    height: 400px;
     border-radius: 10px;
 }
 
