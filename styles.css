@@ -14,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .custom-body {
@@ -213,8 +214,6 @@ button:active {
         border-radius: 10px;
     }
 
-
-
     .portfolio_images img {
         width: 470px;
         height: 200px;
@@ -232,7 +231,14 @@ button:active {
     #short-project-descriptions{
         height: auto;
         padding: 1px;
-        padding-bottom: 46vh;
+        padding-bottom: 32vh;
+        background-color: #EDECE0;
+    }
+
+    #griffin-dev-body{
+        height: auto;
+        padding: 1px;
+        padding-bottom: 12vh;
         background-color: #EDECE0;
     }
     #mndr-project-body{
@@ -267,7 +273,7 @@ button:active {
         width: 1850px;
         height: 300px;
         padding: 1px;
-        margin-top: 50px;
+        margin-top: 200px;
     }
 
     .team-member-cards{
@@ -513,7 +519,6 @@ button:active {
         border-radius: 10px;
         background-color: #4B2F73;
         height: auto;
-
     }
 
     .keyboard-flip-container {
@@ -531,7 +536,9 @@ button:active {
         height: 100%;
         transform-style: preserve-3d;
         transition: all 1.0s linear;
-        margin-bottom: 50px;
+    }
+    #keyboard-spacer{
+        margin-bottom: 165px;
     }
 
 
@@ -611,6 +618,10 @@ button:active {
     .team-member-cards a:hover{
         text-decoration: underline;
         color: #F2C4D0;
+    }
+
+    .team-members-container{
+        margin-top: 100px;
     }
 
 
@@ -944,6 +955,49 @@ button:active {
 .project-image iframe{
     margin-top: 70px;
 }
+
+/* Image Slideshow styles */
+/* Inspiration from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/
+
+.previous-slide, .next-slide{
+    color: #4B2F73;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    position: absolute;
+    padding: 16px;
+}
+.next-slide{
+    right: 0;
+}
+
+
+.slide-class{
+    display: none;
+}
+
+.slide-class-small{
+    display: none;
+}
+
+
+.slides-container{
+    margin-top: 50px;
+    width: 1200px;
+    position: relative;
+}
+
+.slide-fade{
+    animation-name: fade-trans;
+    animation-duration: 1.2s;
+}
+
+@keyframes fade-trans {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+
 
 
 /*Sandbox styles*/

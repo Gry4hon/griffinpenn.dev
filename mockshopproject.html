@@ -58,17 +58,41 @@
                     </p>
 
                     <p style="font-size: 20px; margin-top: 30px;">
-                        Mockshop.com is a mockup of a full stack ecommerce web app. Using Node.JS and Express JS to handle requests
-                        and responses from an SQL server, and using Bootstrap and React JS for the front end design, the web app
-                        is to demonstrate my full stack development skills. I also plan to host the mockup on my own Apache web server to
+                        Mockshop.com is a mockup of a full stack ecommerce web app. Using Node.JS and Express JS to
+                        handle requests
+                        and responses from an SQL server, and using Bootstrap and React JS for the front end design, the
+                        web app
+                        is to demonstrate my full stack development skills. I also plan to host the mockup on my own
+                        Apache web server to
                         get a better understanding of the process for serving client side content.
                     </p>
 
                 </div>
-                <div class="col project-image">
-                    <img src="images/actual-logo.jpg" class="img-fluid">
+                <div class="row">
+                    <div class="container d-flex justify-content-center">
+                        <div class="slides-container">
+                            <div class="slide-class slide-fade">
+                                <img src="images/mockshop_one.JPG" class="img-fluid">
+                            </div>
+
+                            <div class="slide-class slide-fade">
+                                <img src="images/mockshop_two.JPG" class="img-fluid">
+                            </div>
+
+                            <div class="slide-class slide-fade">
+                                <img src="images/mockshop_three.JPG" class="img-fluid">
+                            </div>
+
+                            <div class="slide-class slide-fade">
+                                <img src="images/mockshop_four.JPG" class="img-fluid">
+                            </div>
+                            <a class="previous-slide" onclick="IterateSlides(-1)">Previous</a>
+                            <a class="next-slide" onclick="IterateSlides(1)">Next</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div id="mobile-project-view">
             <div class="container">
@@ -82,13 +106,34 @@
                 <br>
 
                 <p style="font-size: 20px; margin-top: 30px;">
-                    Mockshop.com is a mockup of a full stack ecommerce web app. Using Node.JS and Express JS to handle requests
-                    and responses from an SQL server, and using Bootstrap and React JS for the front end design, the web app
-                    is to demonstrate my full stack development skills. I also plan to host the mockup on my own Apache web server to
+                    Mockshop.com is a mockup of a full stack ecommerce web app. Using Node.JS and Express JS to handle
+                    requests
+                    and responses from an SQL server, and using Bootstrap and React JS for the front end design, the web
+                    app
+                    is to demonstrate my full stack development skills. I also plan to host the mockup on my own Apache
+                    web server to
                     get a better understanding of the process for serving client side content.
                 </p>
                 <br>
-                <img src="images/actual-logo.jpg" width="600px" height="200px" class="img-fluid">
+                <div class="container">
+                    <div class="row">
+                        <img src="images/mockshop_one.JPG" class="img-fluid">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="images/mockshop_two.JPG" class="img-fluid">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="images/mockshop_three.JPG" class="img-fluid">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="images/mockshop_four.JPG" class="img-fluid">
+                    </div>
+                    <br>
+                </div>
+
             </div>
         </div>
     </div>
@@ -108,6 +153,49 @@
             }
 
         }
+
+        let slideIndex = 1;
+
+        DisplaySlide(slideIndex);
+
+        function IterateSlides(slideNum) {
+            DisplaySlide(slideIndex += slideNum);
+        }
+
+        function CurrentSlide(slideNum) {
+            DisplaySlide(slideIndex = slideNum);
+        }
+
+
+        function DisplaySlide(slideNum) {
+
+            let numOfSlides;
+
+            let slidesOnPage = document.getElementsByClassName("slide-class");
+            console.log(slidesOnPage);
+
+                //If the iteration of the slideNum goes above the number of slides on the page, it resets it back to the first slide
+                if (slideNum > slidesOnPage.length) {
+                    slideIndex = 1;
+                }
+
+                //IF the user hits the previous button on the first slide it will set the slide num to equal
+                //-1, in which case the index is set to the end number which is the total number of slides :O
+                if (slideNum < 1) {
+                    slideIndex = slidesOnPage.length;
+                }
+
+                //This insures that the other images have a display of none so they don't take up
+                //real estate on the page even when they are not visiable
+                for (numOfSlides = 0; numOfSlides < slidesOnPage.length; numOfSlides++) {
+                    slidesOnPage[numOfSlides].style.display = "none";
+                }
+
+                //This insures that is falls within the guidelines of an array: 0=1st slide, 1=2nd slide, etc...
+                slidesOnPage[slideIndex - 1].style.display = "block";
+        }
+
+
     </script>
 </body>
 <footer>
