@@ -103,6 +103,8 @@ button:active {
     background: #8C5679;
 }
 
+
+/*Web Resizing*/
 @media only screen and (min-width: 850px) {
 
     /*All pages resize styles*/
@@ -114,11 +116,24 @@ button:active {
         display: none;
     }
 
-    /*About Me page resize styles*/
+    /*About Me webpage resize styles*/
+
+    .bio-container{
+        height: 1100px; 
+    }
 
     #aboutme-logo-explaination {
         margin-top: 150px;
         font-size: 20px;
+    }
+
+    .body-welcome {
+        background-image: url("images/theCrossroads.jpg");
+        background-repeat: no-repeat;
+        background-color: rgba(66, 55, 140, 0.9);
+        background-blend-mode: saturation;
+        background-size: 100vw 100%;
+        height: 1250px;
     }
 
     .model-viewer-model model-viewer {
@@ -141,6 +156,12 @@ button:active {
         width: 470px;
         height: 200px;
         border-radius: 10px;
+    }
+
+    .keyboard-container {
+        height: 1950px;
+        background-color: #EDECE0;
+        padding: 1px;
     }
 
     .keyboard-pic img:hover {
@@ -254,6 +275,10 @@ button:active {
         background-color: #EDECE0;
     }
 
+    .portfolio-container{
+        height: 1550px; 
+    }
+
     .projects-body {
         height: auto;
         padding: 1px;
@@ -339,6 +364,8 @@ button:active {
     }
 }
 
+/*Mobile Resized Styles*/
+
 @media only screen and (max-width: 850px) {
     #custom-nav-text {
         display: none;
@@ -370,6 +397,21 @@ button:active {
 
     .custom-dropdown-button:hover {
         background-color: lightgrey;
+    }
+
+    .keyboard-container {
+        height: auto;
+        background-color: #EDECE0;
+        padding: 1px;
+    }
+
+    .body-welcome {
+        background-image: url("images/theCrossroads.jpg");
+        background-repeat: no-repeat;
+        background-color: rgba(66, 55, 140, 0.9);
+        background-blend-mode: saturation;
+        background-size: 100vw 100%;
+        height: auto;
     }
 
     #custom-dropdown-content {
@@ -433,6 +475,10 @@ button:active {
 
     /*Sandbox/About Me page resize styles*/
 
+    .portfolio-container{
+        height: auto; 
+    }
+
     .model-viewer-model model-viewer {
         height: 300px;
         width: 300px;
@@ -463,6 +509,10 @@ button:active {
 
 
     /*About Me page resize styles*/
+
+    .bio-container{
+        height: auto; 
+    }
 
     .keyboard-explaination-pic img {
         border-radius: 10px;
@@ -674,14 +724,7 @@ button:active {
 
 /* Home/Index Page Styles */
 
-.body-welcome {
-    background-image: url("images/theCrossroads.jpg");
-    background-repeat: no-repeat;
-    background-color: rgba(66, 55, 140, 0.9);
-    background-blend-mode: saturation;
-    background-size: 100vw 100%;
-    height: 1250px;
-}
+
 
 .home-page-body {
     height: auto;
@@ -742,9 +785,7 @@ button:active {
     height: auto;
 }
 
-.bio-container{
-    height: 1100px; 
-}
+
 
 
 .aboutme-container {
@@ -753,11 +794,7 @@ button:active {
     padding: 1px;
 }
 
-.keyboard-container {
-    height: 1950px;
-    background-color: #EDECE0;
-    padding: 1px;
-}
+
 
 .keyboard-content {
     height: auto;
@@ -919,9 +956,7 @@ button:active {
     padding-top: 15px;
 }
 
-.portfolio-container{
-    height: 1550px; 
-}
+
 
 .portfolio_images {
     padding: 1px;
