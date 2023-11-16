@@ -407,8 +407,8 @@ button:active {
     .mobile-image-class {
         background: url(images/meTrans.png), url(images/backgroundart.png);
         background-repeat: no-repeat;
-        background-size: 100vw 100%;
-        height: 40%;
+        background-size: 90vw 100%;
+        height: 450px;
         border-radius: 50%;
     }
 
@@ -645,7 +645,7 @@ button:active {
 .custom-page-header h2 {
     text-align: center;
     color: #EDECE0;
-    padding-top: 50px;
+    padding-top: 105px;
 }
 
 .body-articles {
@@ -680,9 +680,7 @@ button:active {
     background-color: rgba(66, 55, 140, 0.9);
     background-blend-mode: saturation;
     background-size: 100vw 100%;
-    height: auto;
-    padding: 1px;
-    padding-bottom: 290px;
+    height: 1250px;
 }
 
 .home-page-body {
@@ -695,8 +693,7 @@ button:active {
 .home-page-content {
     margin-top: 20px;
     padding: 1px;
-    height: auto;
-    padding-bottom: 40vh;
+    height: 1080px;
 }
 
 .home-page-text {
@@ -745,21 +742,38 @@ button:active {
     height: auto;
 }
 
+.bio-container{
+    height: 1100px; 
+}
+
+
 .aboutme-container {
-    height: auto;
+    height: 1080px;
     background-color: #EDECE0;
     padding: 1px;
+}
+
+.keyboard-container {
+    height: 1950px;
+    background-color: #EDECE0;
+    padding: 1px;
+}
+
+.keyboard-content {
+    height: auto;
+    padding-bottom: 10vh;
+    background-color: #EDECE0;
+    padding-top: 150px;
 }
 
 .aboutme-content h2 {
     text-align: center;
     color: #010326;
-    padding-top: 30px;
+    padding-top: 140px;
 }
 
 .aboutme-content {
     height: auto;
-    padding-bottom: 10vh;
     background-color: #EDECE0;
 }
 
@@ -780,12 +794,6 @@ button:active {
     font-size: 20px;
 }
 
-.keyboard-container {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: 20px;
-}
 
 
 
@@ -909,6 +917,10 @@ button:active {
     background-size: 100vw 100%;
     height: auto;
     padding-top: 15px;
+}
+
+.portfolio-container{
+    height: 1550px; 
 }
 
 .portfolio_images {
