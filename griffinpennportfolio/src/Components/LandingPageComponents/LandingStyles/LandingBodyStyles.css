@@ -1,5 +1,20 @@
-body{
+#landing-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
     background-size:cover;
+    width: auto;
+    height: 1920px;
 }
+
+
+@media screen and (max-width: 1920px) {
+    #landing-body{
+        background-image: url("./Assets/BackgroundImage.png");
+        background-repeat: no-repeat;
+        background-size: 1920px 1070px;
+        
+    }
+
+}
+
+
