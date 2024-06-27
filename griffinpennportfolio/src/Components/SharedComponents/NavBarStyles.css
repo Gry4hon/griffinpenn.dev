@@ -60,7 +60,12 @@
     margin-right: 10px;
     border-radius: 50px;
     padding: 0;
+    background-color: #f6f6f6;
+    border: solid #010326 3px;
+}
 
+.display-switch p{
+    font-weight: bold;
 }
 
 #switch-icon{
@@ -69,5 +74,7 @@
     height: 26px;
     border-radius: 50px;
     margin-right: 24px;
+    margin-bottom: 20px;
     
 }
+

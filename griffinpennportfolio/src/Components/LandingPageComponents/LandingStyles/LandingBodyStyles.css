@@ -4,7 +4,7 @@
     background-size:cover;
     width: auto;
     height: 1920px;
-    z-index: 1;
+
 }
 
 
@@ -13,8 +13,6 @@
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
         background-size: 1920px 1070px;
-        z-index: 1;
-
     }
 
 }
