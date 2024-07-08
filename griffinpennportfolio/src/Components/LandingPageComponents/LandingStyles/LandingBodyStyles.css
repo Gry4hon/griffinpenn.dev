@@ -3,15 +3,14 @@
     background-repeat: no-repeat;
     background-size: 100% 1250px;
     width: auto;
-    height: 1920px;
-    box-shadow: 0 16px 22px -2px  #01032650;
-
+    z-index: 6;
+    box-shadow: 0 4px 16px #01032650;
 }
 
 .landing-elements{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 1920px;
+    height: 1060px;
 }
 
 
@@ -19,6 +18,7 @@
     margin-top: 320px;
     display: flexbox;
     width: 700px;
+    height: 500px;
     font-size: 24px;
     margin-left: -100px;
 }
@@ -26,11 +26,17 @@
 .landing-image{
     margin-top: 150px;
     margin-left: 30%;
+    height: 800px;
 }
 
 .landing-image img{
     width: 800px;
     height: 800px;
+}
+
+.arrow-styles{
+    width: 130px;
+    height: 130px;
 }
 
 .arrow-styles img{
@@ -68,6 +74,8 @@
         margin-top: 300px;
         display: flexbox;
         width: 600px;
+        height: 500px;
+
         margin-left: -50px;
         margin-right: -100px;
     }

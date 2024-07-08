@@ -1,0 +1,29 @@
+#aboutme-body{
+    background-image: url("./Assets/BackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1250px;
+    width: auto;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    height: 1070px;
+    z-index: 4;
+    margin-top: 1px;
+}
+
+.aboutme-elements{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 1060px;
+}
+
+.aboutme-text{
+    margin-top: 50%;
+}
+
+.aboutme-header{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.aboutme-image-carosel{
+    margin-top: 200px;
+}
