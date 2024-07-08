@@ -7,10 +7,26 @@ function AboutMe() {
       <div id="aboutme-body">
         <div className="container aboutme-elements">
           <div className="aboutme-text">
-            <p>Me code stuff</p>
+            <p>
+              I am a <b>passionate</b> developer, and recent college graduate,
+              who has the <b>drive</b> to make any project come to <b>life</b>.
+              I have experience building <b>full stack web applications</b>,{" "}
+              <b>virtual reality applications</b> and <b>hardware</b>, and have
+              a deep fascination with <b>low level development</b>.
+            </p>
+            <br />
+            <p>
+              My background <b>before</b> college was in fine arts, but through
+              my major, a passion for <b>software development</b> grew. I have
+              taken everyday since graduating learning more about{" "}
+              <b>clean code</b>, <b>system design</b>, and best practices when
+              developing <b>software</b>.
+            </p>
           </div>
           <div className="aboutme-header">
-            <h1>WHO IS ME??</h1>
+            <p>
+              Who is <b className="name">Griffin Penn</b>
+            </p>
           </div>
           <div className="aboutme-image-carosel">
             <img src={test} alt="" />

@@ -10,7 +10,7 @@
 .landing-elements{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 1060px;
+    height: 1250px;
 }
 
 
@@ -67,6 +67,8 @@
     .landing-elements{
         display: grid;
         grid-template-columns: auto auto auto;
+        height: 1060px;
+
     }
     
     

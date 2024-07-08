@@ -13,13 +13,13 @@ function MoveLogo() {
   if (!isClicked && logo) {
     logo.style.marginRight = "-24px";
 
-    console.log("DARK MODE");
+    alert("UNDER CONSTRUCTION!");
     isClicked = true;
     switchButton.style.backgroundColor = "#6900ff";
     logo.src = dark;
   } else if (isClicked && logo) {
     logo.style.marginRight = "24px";
-    console.log("light mode");
+
     logo.src = light;
     switchButton.style.backgroundColor = "#f6f6f6";
 
