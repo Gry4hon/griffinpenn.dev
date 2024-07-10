@@ -1,0 +1,48 @@
+#tech-stack-body{
+    background-image: url("./Assets/BackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1320px;
+    width: auto;
+    z-index: 2;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    height: 1360px;
+    margin-top: 1px;
+}
+
+.tech-stack-container{
+    height: 1360px;
+    display: grid;
+
+}
+
+.logo-group-one{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.logo-group-one img{
+    width: 300px;
+    height: 300px;
+}
+
+.logo-group-two{
+    display: grid;
+    margin-top: 200px;
+
+    grid-template-columns: auto auto auto;
+}
+
+.logo-group-two img{
+    width: 300px;
+    height: 300px;
+}
+
+.tech-stack-header{
+    
+    text-align: center;
+    font-size: 55px;
+    width: 900px;
+    margin-top: 200px;
+    text-align: center;
+}

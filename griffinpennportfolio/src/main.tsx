@@ -4,6 +4,7 @@ import Landing from "./Components/LandingPageComponents/LandingBody.tsx";
 import NavBar from "./Components/SharedComponents/NavBar.tsx";
 import AboutMe from "./Components/AboutMeComponents/AboutMe.tsx";
 import WhatIDo from "./Components/WhatIdo/WhatIDo.tsx";
+import TechStack from "./Components/TechStackComponents/TechStack.tsx";
 import "./MainStyles.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -13,5 +14,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Landing />
     <AboutMe />
     <WhatIDo />
+    <TechStack />
   </React.StrictMode>
 );
