@@ -24,9 +24,10 @@
 .aboutme-header{
     margin-top: 100px;
     text-align: center;
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: auto;
     font-size: 55px;
+    width: 600px;
 }
 .name{
     color:#6900ff;
@@ -34,6 +35,13 @@
 
 .aboutme-image-carosel{
     margin-top: 200px;
+    
+
+}
+
+.aboutme-image-carosel img{
+    width: 600px;
+    height: 600px;
 }
 
 
@@ -48,7 +56,8 @@
     .aboutme-header{
         margin-top: 300px;
         text-align: center;
-        margin-left: auto;
+        margin-left: 90px;
+
         margin-right: auto;
         font-size: 55px;
     }
@@ -58,6 +67,13 @@
     
     .aboutme-image-carosel{
         margin-top: 400px;
+        margin-left: -100px;
     }
+    
+    .aboutme-image-carosel img{
+        width: 600px;
+        height: 600px;
+    }
+
 
 }

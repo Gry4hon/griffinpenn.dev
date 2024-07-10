@@ -1,5 +1,6 @@
 import "./AboutMeStyles/AboutMeStyle.css";
-import test from "./AboutMeStyles/Assets/ARROW.png";
+import graduate from "./AboutMeStyles/Assets/Graduate_Me.png";
+import working from "./AboutMeStyles/Assets/Working Me.png";
 
 function AboutMe() {
   return (
@@ -29,7 +30,7 @@ function AboutMe() {
             </p>
           </div>
           <div className="aboutme-image-carosel">
-            <img src={test} alt="" />
+            <img src={graduate} alt="" />
           </div>
         </div>
       </div>
