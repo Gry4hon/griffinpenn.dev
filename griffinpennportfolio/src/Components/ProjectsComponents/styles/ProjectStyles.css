@@ -1,0 +1,20 @@
+#projects-body{
+    background-image: url("./Assets/BackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 2320px;
+    width: auto;
+    z-index: 4;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    height: 2360px;
+    margin-top: 1px;
+}
+
+.projects-elements{
+    height: 2320px;
+    display: grid;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}

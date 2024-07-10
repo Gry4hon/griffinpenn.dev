@@ -14,36 +14,41 @@ function TechStack() {
       <div id="tech-stack-body">
         <div className="tech-stack-container">
           <div className="tech-stack-header container">
-            <p>My Tech Stack</p>
+            <p>
+              My <b className="colored-emp">Tech Stack</b>
+            </p>
           </div>
           <p className="tech-stack-bio container">
-            I have a wide breadth of experiences with using various frameworks
-            and software applications, but here are the technologies I
-            specialize in:
+            I have a wide <b>breadth</b> of experiences with using various{" "}
+            <b>frameworks</b>
+            and <b>software applications</b>, but here are the{" "}
+            <b>technologies</b> I specialize in:
           </p>
-          <div className="logo-group-one container">
-            <div>
-              <img src={cpplogo} alt="" />
+          <div className="container">
+            <div className="logo-group-one container">
+              <div>
+                <img src={cpplogo} alt="" />
+              </div>
+              <div>
+                <img src={reactlogo} alt="" />
+              </div>
+              <div>
+                <img src={nodejslogo} alt="" />
+              </div>
+              <div>
+                <img src={arduinologo} alt="" />
+              </div>
             </div>
-            <div>
-              <img src={reactlogo} alt="" />
-            </div>
-            <div>
-              <img src={nodejslogo} alt="" />
-            </div>
-            <div>
-              <img src={arduinologo} alt="" />
-            </div>
-          </div>
-          <div className="logo-group-two container">
-            <div>
-              <img src={unitylogo} alt="" />
-            </div>
-            <div>
-              <img src={mysqllogo} alt="" />
-            </div>
-            <div>
-              <img src={csharplogo} alt="" />
+            <div className="logo-group-two container">
+              <div>
+                <img src={unitylogo} alt="" />
+              </div>
+              <div>
+                <img src={mysqllogo} alt="" />
+              </div>
+              <div>
+                <img src={csharplogo} alt="" />
+              </div>
             </div>
           </div>
         </div>
