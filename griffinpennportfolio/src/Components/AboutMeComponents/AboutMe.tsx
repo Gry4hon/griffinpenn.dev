@@ -1,6 +1,6 @@
 import "./AboutMeStyles/AboutMeStyle.css";
 import graduate from "./AboutMeStyles/Assets/Graduate_Me.png";
-import working from "./AboutMeStyles/Assets/Working Me.png";
+//import working from "./AboutMeStyles/Assets/Working Me.png";
 
 function AboutMe() {
   return (
@@ -26,7 +26,7 @@ function AboutMe() {
           </div>
           <div className="aboutme-header">
             <p>
-              Who is <b className="name">Griffin Penn</b>
+              Who is <b className="colored-emp">Griffin Penn</b>
             </p>
           </div>
           <div className="aboutme-image-carosel">
