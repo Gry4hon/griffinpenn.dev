@@ -20,18 +20,23 @@
     width: 750px;
     font-size: 26px;
     margin-right: -400px;
+    height: 400px;
 }
 
 .what-do-header{
-    margin-top: 200px;
+    margin-top: 220px;
     text-align: center;
     font-size: 55px;
     width: 900px;
+    height: 100px;
+
 }
 
 .what-do-pic{
     margin-top: 300px;
     margin-left: -200px;    
+    height: 600px;
+
 
 }
 
@@ -49,13 +54,13 @@
     #what-do-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 1920px 1060px;
+        background-size: 1920px 1180px;
     }
 
     .what-do-container{
         display: grid;
         grid-template-columns: auto auto auto;
-        height: 1260px;
+        height: 1160px;
     
     }
 

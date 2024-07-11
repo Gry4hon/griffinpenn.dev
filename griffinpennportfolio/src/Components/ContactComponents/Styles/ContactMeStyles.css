@@ -11,10 +11,27 @@
 
 .contact-elements{
     height: 1320px;
-    display: grid;
+    display: flow-root;
 }
 
-.contact-container{
-    display: grid;
-    grid-template-columns: auto auto;
+.contact-header{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 55px;
+    width: auto;
+    height: 100px;
 }
+
+.contact-bio{
+    text-align: center;
+    width: 1200px;
+    font-size: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+
+.contact-emp{
+    color:#6900ff;
+}
+

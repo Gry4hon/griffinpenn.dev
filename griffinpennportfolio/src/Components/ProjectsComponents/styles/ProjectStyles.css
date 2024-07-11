@@ -1,7 +1,7 @@
 #projects-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 2320px;
+    background-size: 100% 2360px;
     width: auto;
     z-index: 4;
     box-shadow: 0 16px 2px -2px  #01032650;
@@ -10,11 +10,31 @@
 }
 
 .projects-elements{
-    height: 2320px;
-    display: grid;
+    height: 2360px;
+    display: inline;
 }
 
 .projects-container{
     display: grid;
     grid-template-columns: auto auto;
+}
+
+.projects-header{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 55px;
+    width: auto;
+    height: 100px;
+}
+
+.projects-bio{
+    text-align: center;
+    width: 1200px;
+    font-size: 26px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.colored-emp{
+    color:#6900ff;
 }
