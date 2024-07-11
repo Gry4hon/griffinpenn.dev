@@ -12,7 +12,7 @@ function TechStack() {
   return (
     <>
       <div id="tech-stack-body">
-        <div className="tech-stack-container">
+        <div className="tech-stack-container container">
           <div className="tech-stack-header container">
             <p>
               My <b className="colored-emp">Tech Stack</b>
