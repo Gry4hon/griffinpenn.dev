@@ -15,8 +15,8 @@ function ContactMe() {
             <b>LinkedIn</b>, either way I can’t wait to hear from you!
           </p>
           <div className="contact-container"></div>
+          <footer>&copy;Griffin Penn 2024</footer>
         </div>
-        <footer>&copy;Griffin Penn 2024</footer>
       </div>
     </>
   );

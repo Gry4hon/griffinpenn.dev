@@ -1,4 +1,5 @@
 import "./styles/ProjectStyles.css";
+import ProjectBox from "./ProjectBox.tsx";
 
 function Projects() {
   return (
@@ -16,7 +17,12 @@ function Projects() {
               have a public repository for you to explore on <b>GitHub</b>!
             </p>
           </div>
-          <div className="projects-container"></div>
+          <div className="projects-container">
+            <ProjectBox title="Project Vulcn" />
+            <ProjectBox title="Burger Rush" />
+            <ProjectBox title="Mockshop.com" />
+            <ProjectBox title="Swift Navigation App" />
+          </div>
         </div>
       </div>
     </>

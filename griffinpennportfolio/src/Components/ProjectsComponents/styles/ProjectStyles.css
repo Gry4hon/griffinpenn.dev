@@ -16,7 +16,7 @@
 
 .projects-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
 }
 
 .projects-header{
