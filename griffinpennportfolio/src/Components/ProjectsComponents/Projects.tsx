@@ -18,10 +18,34 @@ function Projects() {
             </p>
           </div>
           <div className="projects-container">
-            <ProjectBox title="Project Vulcn" />
-            <ProjectBox title="Burger Rush" />
-            <ProjectBox title="Mockshop.com" />
-            <ProjectBox title="Swift Navigation App" />
+            <ProjectBox
+              title="Project Vulcn"
+              bodyKey="vulcn-body"
+              barKey="vulcn-bar"
+              bioKey="vulcn-bio"
+              bio="This is an ongoing research and development project that seeks to understand how temperature can better immerse a user in virtual reality."
+            />
+            <ProjectBox
+              title="Burger Rush"
+              bodyKey="burger-body"
+              barKey="burger-bar"
+              bioKey="burger-bio"
+              bio="THIS IS A BURGER TEST"
+            />
+            <ProjectBox
+              title="Mockshop.com"
+              bodyKey="mock-body"
+              barKey="mock-bar"
+              bioKey="mock-bio"
+              bio="THIS IS A MOCK TEST"
+            />
+            <ProjectBox
+              title="Swift Navigation App"
+              bodyKey="swift-body"
+              barKey="swift-bar"
+              bioKey="swift-bio"
+              bio="THIS IS A SWIFT TEST"
+            />
           </div>
         </div>
       </div>

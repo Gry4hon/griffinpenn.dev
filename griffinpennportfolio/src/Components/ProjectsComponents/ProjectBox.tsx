@@ -4,25 +4,36 @@ import test from "./styles/Assets/LOGO.png";
 
 function ProjectBox(props) {
   const [isClicked, setIsClicked] = useState(false);
-  const [boxSize, setBoxSize] = useState("275px");
-  const [barLocation, setBarLocation] = useState("253px");
 
   function ExpandDong() {
+    const backBody = document.getElementById(props.bodyKey);
+    const expandBar = document.getElementById(props.barKey);
+    const bio = document.getElementById(props.bioKey);
+
     if (!isClicked) {
-      setBoxSize("1300px");
+      backBody!.style.width = "1300px";
+      backBody!.style.backgroundColor = "#f6f6f6";
+      backBody!.style.border = "4px solid #6900ff";
 
-      document.getElementById("box-body-back")!.style.width = "1300px";
-      document.getElementById("select-bar")!.style.marginLeft = "1250px";
+      bio!.innerHTML = props.bio;
+      bio!.style.marginLeft = "260px";
+      bio!.style.marginTop = "50px";
+
+      expandBar!.style.marginLeft = "1250px";
+
       setIsClicked(true);
-      console.log("CLICKED!");
     } else if (isClicked) {
-      setBoxSize("275px");
-      setBarLocation("253px");
-      document.getElementById("box-body-back")!.style.width = boxSize;
-      document.getElementById("select-bar")!.style.marginLeft = barLocation;
-      setIsClicked(false);
+      backBody!.style.width = "275px";
+      backBody!.style.backgroundColor = "#6900ff";
+      backBody!.style.border = "none";
 
-      console.log("UNCLICKED!");
+      bio!.innerHTML = "";
+      bio!.style.marginLeft = "0px";
+      bio!.style.marginTop = "0px";
+
+      expandBar!.style.marginLeft = "230px";
+
+      setIsClicked(false);
     }
   }
   return (
@@ -32,9 +43,11 @@ function ProjectBox(props) {
           <p>{props.title}</p>
           <img src={test} width="100px" height="100px" />
         </div>
-        <div id="box-body-back"></div>
-        <div id="select-bar">
-          <button onClick={ExpandDong} id="expand-button"></button>
+        <div id={props.bodyKey} className="box-body-back">
+          <p id={props.bioKey}></p>
+        </div>
+        <div id={props.barKey} className="select-bar">
+          <button onClick={ExpandDong}></button>
         </div>
       </div>
     </>
