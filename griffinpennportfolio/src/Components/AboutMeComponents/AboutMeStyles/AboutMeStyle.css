@@ -1,0 +1,81 @@
+#aboutme-body{
+    background-image: url("./Assets/BackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1360px;
+    width: auto;
+    z-index: 4;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    margin-top: 1px;
+}
+
+.aboutme-elements{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 1360px;
+}
+
+.aboutme-text{
+    margin-top: 400px;
+    width: 700px;
+    font-size: 26px;
+    margin-right: -400px;
+    margin-left: 50px;
+
+}
+
+.aboutme-header{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 55px;
+    width: 900px;
+    
+    margin-left: -100px;
+    display: inline;
+}
+.colored-emp{
+    color:#6900ff;
+}
+
+.aboutme-image-carosel{
+    margin-top: 300px;
+    margin-left: -400px;    
+
+}
+
+.aboutme-image-carosel img{
+    width: 600px;
+    height: 600px;
+}
+
+
+@media screen and (max-width: 1920px) {
+    .aboutme-text{
+        margin-top: 350px;
+        width: 700px;
+        font-size: 26px;
+        margin-right: -400px;
+    margin-left: 50px;
+
+    }
+    
+    .aboutme-header{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 55px;
+    }
+    .colored-emp{
+        color:#6900ff;
+    }
+    
+    .aboutme-image-carosel{
+        margin-top: 250px;
+        margin-left: -400px;
+    }
+    
+    .aboutme-image-carosel img{
+        width: 500px;
+        height: 500px;
+    }
+
+
+}
