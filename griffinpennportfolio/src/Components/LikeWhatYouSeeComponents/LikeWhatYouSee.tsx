@@ -1,4 +1,5 @@
 import "./styles/LikeWhatYouSee.css";
+import me from "./styles/Assets/me.jpeg";
 
 function LikeWhatYouSee() {
   return (
@@ -17,7 +18,9 @@ function LikeWhatYouSee() {
               would like to work with me!
             </p>
           </div>
-          <div className="likeme-container"></div>
+          <div className="likeme-container">
+            <img src={me} id="me-img"/>
+          </div>
         </div>
       </div>
     </>

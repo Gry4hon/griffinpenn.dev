@@ -1,6 +1,6 @@
 import "./styles/ProjectBoxStyles.css";
 import { useState } from "react";
-import test from "./styles/Assets/LOGO.png";
+import test from "./styles/Assets/github_logo.png";
 
 function ProjectBox(props) {
   const [isClicked, setIsClicked] = useState(false);

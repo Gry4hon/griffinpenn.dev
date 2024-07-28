@@ -35,6 +35,19 @@
     color:#6900ff;
 }
 
+.likeme-container img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+}
+#me-img{
+    left: 30%;
+    position: absolute;
+}
+
 
 @media screen and (max-width: 1920px) {
 
