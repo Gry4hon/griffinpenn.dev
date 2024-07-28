@@ -20,6 +20,7 @@ function Projects() {
           <div className="projects-container">
             <ProjectBox
               title="Project Vulcn"
+              link="https://github.com/Gry4hon/Project-Vulcn"
               bodyKey="vulcn-body"
               barKey="vulcn-bar"
               bioKey="vulcn-bio"
@@ -41,6 +42,7 @@ function Projects() {
               bodyKey="mock-body"
               barKey="mock-bar"
               bioKey="mock-bio"
+              link="https://github.com/Gry4hon/Mockshop.com"
               techKey="mock-tech"
               bio="Mockshop.com was a full-stack web app that emulated the functionality of an e-commerce website. I implemented a custom CRUD API for users to create accounts, have their carts saved, as well as a admin API to directly interact with the MySQL database."
               tech="<b>Technologies Used:</b> HTML/CSS, JavaScript, Node.JS, ExpressJS, Bootstrap"

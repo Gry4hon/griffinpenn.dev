@@ -49,7 +49,7 @@ function ProjectBox(props) {
       <div className="container" id="box-cont">
         <div id="box-body">
           <p>{props.title}</p>
-          <img src={test} width="100px" height="100px" />
+          <a href={props.link}><img src={test} width="100px" height="100px" /></a>
         </div>
         <div id={props.bodyKey} className="box-body-back">
           <p id={props.techKey}></p>
