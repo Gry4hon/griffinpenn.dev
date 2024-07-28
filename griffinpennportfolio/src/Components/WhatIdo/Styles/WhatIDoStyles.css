@@ -19,7 +19,7 @@
     margin-top: 400px;
     width: 750px;
     font-size: 26px;
-    margin-right: -400px;
+    margin-right: -600px;
     height: 400px;
 }
 
@@ -29,20 +29,20 @@
     font-size: 55px;
     width: 900px;
     height: 100px;
-
+    margin-right: -200px;
 }
 
 .what-do-pic{
     margin-top: 300px;
     margin-left: -200px;    
-    height: 600px;
+    height: 300px;
 
 
 }
 
 .what-do-pic img{
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
 }
 
 .colored-emp{
@@ -65,8 +65,8 @@
     }
 
     .what-do-pic{
-        margin-top: 300px;
-        margin-left: -300px;
+        margin-top: 400px;
+       
     }
 
 }

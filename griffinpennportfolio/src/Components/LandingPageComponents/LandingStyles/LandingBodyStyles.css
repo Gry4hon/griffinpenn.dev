@@ -1,7 +1,7 @@
 #landing-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 1250px;
+    background-size: 100% 1320px;
     width: auto;
     z-index: 6;
     box-shadow: 0 4px 16px #01032650;
@@ -10,7 +10,8 @@
 .landing-elements{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 1250px;
+    height: auto;
+    width: auto;
 }
 
 
@@ -20,7 +21,6 @@
     width: 700px;
     height: 500px;
     font-size: 24px;
-    margin-left: -100px;
 }
 
 .landing-image{
@@ -61,38 +61,35 @@
     #landing-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 1920px 1060px;
+        background-size: auto 1060px;
     }
 
     .landing-elements{
         display: grid;
-        grid-template-columns: auto auto auto;
         height: 1060px;
 
     }
     
     
     .landing-text{
-        margin-top: 300px;
-        display: flexbox;
+        margin-top: 200px;
         width: 600px;
         height: 500px;
-
-        margin-left: -50px;
-        margin-right: -100px;
+        margin-left: 100px;
     }
 
     .landing-image img{
-        width: 700px;
-        height: 700px;
-        margin-left: -60px;
+        width: 500px;
+        height: 500px;
+        margin-left: -250px;
     }
 
     .arrow-styles img{  
-        margin-top: 930px;
-        width: 130px;
-        height: 130px;
-        margin-left: 170px;
+        margin-top: 690px;
+        width: 90px;
+        height: 90px;
+        margin-left: -160px;
+       
     }
 
 }
