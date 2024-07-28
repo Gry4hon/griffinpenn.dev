@@ -1,4 +1,3 @@
-*:focus {outline:none !important}
 
 #contact-body{
     background-image: url("./Assets/BackgroundImage.png");
@@ -44,8 +43,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    border: 2px solid #6900ff;
+    border: 2px solid #010326;
     border-radius: 10px;
+}
+
+.email-box-styles:focus{
+    outline-color: #6900ff;
 }
 
 .message-box-styles{
@@ -54,8 +57,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
-    border: 2px solid #6900ff;
+    border: 2px solid #010326;
     border-radius: 10px;
+}
+
+.message-box-styles:focus{
+    outline-color: #6900ff;
 
 }
 
