@@ -25,15 +25,17 @@
     z-index: 1;
     margin-top: -250px;
     height: 250px;
-    
+    box-shadow: 0 10px 2px -2px  #01032650;
+     
 }
 
 
 .box-body-back p{
     z-index: 3;
     color: #010326;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+    width: 900px;
 }
 
 #box-body img{
