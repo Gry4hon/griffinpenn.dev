@@ -44,7 +44,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    margin-top: 50px;
     border: 2px solid #6900ff;
     border-radius: 10px;
 }
@@ -54,7 +53,7 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     border: 2px solid #6900ff;
     border-radius: 10px;
 
@@ -78,19 +77,29 @@
     color: #f6f6f6;
 }
 
+
+#email-label{
+    margin-top: 50px;
+
+}
 label{
     text-align: center;
+}
+.label-styles{
+    color: #010326;
+    font-size: 22px;
+
 }
 
 .send-button-styles:active{
     border: none;
     background-color: #f6f6f6;
-    color: #6900ff;
+    color: #6900ff; 
 }
 
 .footer-styles{
     text-align: center; 
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 .contact-emp{

@@ -1,11 +1,11 @@
 #what-do-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 1350px;
+    background-size: 100% 1320px;
     width: auto;
-    box-shadow: 0 16px 2px -2px  #01032650;
     z-index: 4;
-    margin-top: -35px;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    margin-top: 1px;
 }
 
 .what-do-container{

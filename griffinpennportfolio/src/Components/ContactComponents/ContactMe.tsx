@@ -15,9 +15,9 @@ function ContactMe() {
             <b>LinkedIn</b>, either way I can’t wait to hear from you!
           </p>
           <div className="contact-container">
-            <label htmlFor="email">EMAIL</label>
+            <label id="email-label" className="label-styles" htmlFor="email">Your <b>Email</b></label>
             <input id="email" className="email-box-styles" type="email"></input>
-            <label htmlFor="message">What did you want to talk about?</label>
+            <label className="label-styles" htmlFor="message">What did you want to <b>talk</b> about?</label>
 
             <textarea id="message" className="message-box-styles"></textarea>
           </div>

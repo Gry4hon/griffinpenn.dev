@@ -67,7 +67,6 @@
     .landing-elements{
         display: grid;
         height: 1060px;
-
     }
     
     
@@ -79,9 +78,9 @@
     }
 
     .landing-image img{
-        width: 500px;
+        width: 500px;   
         height: 500px;
-        margin-left: -250px;
+        margin-left: -350px;
     }
 
     .arrow-styles img{  
