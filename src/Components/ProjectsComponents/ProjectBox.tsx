@@ -2,7 +2,7 @@ import "./styles/ProjectBoxStyles.css";
 import { useState } from "react";
 import test from "./styles/Assets/github_logo.png";
 
-function ProjectBox(props) {
+function ProjectBox(props: any) {
   const [isClicked, setIsClicked] = useState(false);
 
   function ExpandDong() {
@@ -49,7 +49,9 @@ function ProjectBox(props) {
       <div className="container" id="box-cont">
         <div id="box-body">
           <p>{props.title}</p>
-          <a href={props.link}><img src={test} width="100px" height="100px" /></a>
+          <a href={props.link}>
+            <img src={test} width="100px" height="100px" />
+          </a>
         </div>
         <div id={props.bodyKey} className="box-body-back">
           <p id={props.techKey}></p>

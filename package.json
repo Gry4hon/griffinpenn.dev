@@ -1,19 +1,20 @@
 {
-  "homepage": "http://Gry4hon.github.io/griffinpenn.dev",
-  "name": "griffinpennportfolio",
+  "homepage": "https://Gry4hon.github.io/griffinpenn.dev",
+  "name": "griffinpenn.dev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
