@@ -13,6 +13,7 @@
 .contact-elements{
     height: 1320px;
     display: flow-root;
+
 }
 
 .contact-header{
@@ -106,7 +107,7 @@ label{
 
 .footer-styles{
     text-align: center; 
-    margin-top: 18%;
+    margin-top: 10%;
 }
 
 .contact-emp{

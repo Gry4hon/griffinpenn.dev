@@ -19,7 +19,7 @@ function LikeWhatYouSee() {
             </p>
           </div>
           <div className="likeme-container">
-            <img src={me} id="me-img"/>
+            <img src={me} />
           </div>
         </div>
       </div>

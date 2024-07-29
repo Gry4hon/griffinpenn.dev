@@ -1,7 +1,7 @@
 #likeme-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 1320px;
+    background-size: 100% 1360px;
     width: auto;
     z-index: 4;
     box-shadow: 0 16px 2px -2px  #01032650;
@@ -34,6 +34,9 @@
 .likeme-emp{
     color:#6900ff;
 }
+.likeme-container{
+    text-align: center;
+}
 
 .likeme-container img{
     width: 600px;
@@ -41,12 +44,10 @@
     border-radius: 50%;
     position: relative;
     margin-top: 60px;
-    display: flex;
+    max-width: 100%; /* Adjust as needed */
+    
 }
-#me-img{
-    left: 30%;
-    position: absolute;
-}
+
 
 
 @media screen and (max-width: 1920px) {
