@@ -1,10 +1,11 @@
 #landing-body{
     background-image: url("./Assets/BackgroundImage.png");
     background-repeat: no-repeat;
-    background-size: 100% 1320px;
+    background-size: 100% 1360px;
     width: auto;
-    z-index: 6;
-    box-shadow: 0 4px 16px #01032650;
+    z-index: 4;
+    box-shadow: 0 16px 2px -2px  #01032650;
+    margin-top: 1px;
 }
 
 .landing-elements{
