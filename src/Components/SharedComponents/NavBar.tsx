@@ -2,6 +2,9 @@ import "./NavBarStyles.css";
 import dark from "./dark.png";
 import light from "./light.png";
 
+import linkedin from "./linkedin.png";
+import octo from "./octocat.png";
+
 let isClicked = false;
 
 function MoveLogo() {
@@ -28,6 +31,32 @@ function MoveLogo() {
 }
 
 function NavBar() {
+  localStorage["currentPage"] = "Landing";
+  localStorage["changeHighlight"] = SwitchHighlight();
+
+  let currentPage = localStorage["currentPage"];
+  function SwitchHighlight() {
+    const aboutMe = document!.getElementById("about");
+    const myWork = document!.getElementById("work");
+    const contactMe = document!.getElementById("contact");
+    switch (currentPage) {
+      case "Landing":
+        aboutMe!.style.backgroundColor = "#f9f9f9";
+        myWork!.style.backgroundColor = "#f3f3f3";
+        contactMe!.style.backgroundColor = "f3f3f3";
+        break;
+      case "Work":
+        aboutMe!.style.backgroundColor = "#f3f3f3";
+        myWork!.style.backgroundColor = "#f9f9f9";
+        contactMe!.style.backgroundColor = "f3f3f3";
+        break;
+      case "Contact":
+        aboutMe!.style.backgroundColor = "#f3f3f3";
+        myWork!.style.backgroundColor = "#f3f3f3";
+        contactMe!.style.backgroundColor = "f9f9f9";
+        break;
+    }
+  }
   return (
     <>
       <div id="nav-container" className="fixed-top">
@@ -37,11 +66,21 @@ function NavBar() {
             <h1>Griffin Penn</h1>
           </div>
           <div className="button-container">
-            <button>About Me</button>
-            <button>Work</button>
-            <button>Resume</button>
-            <button>Contact</button>
+            <button id="about">About Me</button>
+            <button id="work">Work</button>
+            <button id="contact">Contact</button>
+            <button id="linkedin-button">
+              <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/">
+                <img src={linkedin} alt="" />
+              </a>
+            </button>
+            <button id="github-button">
+              <a href="https://github.com/Gry4hon">
+                <img src={octo} alt="" />
+              </a>
+            </button>
           </div>
+
           <div className="display-switch">
             <p>Light</p>
             <button id="switch_button" onClick={MoveLogo}>

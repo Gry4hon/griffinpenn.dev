@@ -1,6 +1,6 @@
 import "./Styles/ContactMeStyles.css";
 
-function ContactMe() {
+function ContactMe(changePage: any) {
   return (
     <>
       <div id="contact-body">

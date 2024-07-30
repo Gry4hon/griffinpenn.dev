@@ -1,7 +1,7 @@
 import "./styles/ProjectStyles.css";
 import ProjectBox from "./ProjectBox.tsx";
 
-function Projects() {
+function Projects(changePage: any) {
   return (
     <>
       <div id="projects-body">

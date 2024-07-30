@@ -8,7 +8,7 @@ import nodejslogo from "./Styles/Assets/NodeJS_Logo.gif";
 
 import "./Styles/TechStackStyles.css";
 
-function TechStack() {
+function TechStack(changePage: any) {
   return (
     <>
       <div id="tech-stack-body">

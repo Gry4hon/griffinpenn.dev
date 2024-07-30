@@ -2,7 +2,7 @@ import "./LandingStyles/LandingBodyStyles.css";
 import animatedMe from "./LandingStyles/Assets/Landing Me.png";
 import arrow from "./LandingStyles/Assets/ARROW.png";
 
-function LandingBody() {
+function LandingBody(changePage: any) {
   return (
     <>
       <div id="landing-body">
