@@ -30,33 +30,33 @@ function MoveLogo() {
   }
 }
 
-function NavBar() {
-  localStorage["currentPage"] = "Landing";
-  localStorage["changeHighlight"] = SwitchHighlight();
+localStorage["currentPage"] = "";
 
-  let currentPage = localStorage["currentPage"];
+function NavBar(props: any) {
   function SwitchHighlight() {
-    const aboutMe = document!.getElementById("about");
-    const myWork = document!.getElementById("work");
-    const contactMe = document!.getElementById("contact");
-    switch (currentPage) {
+    const aboutMe = document.getElementById(props.aboutTag);
+    const myWork = document.getElementById(props.workTag);
+    const contactMe = document.getElementById(props.contactTag);
+
+    switch (localStorage["currentPage"]) {
       case "Landing":
-        aboutMe!.style.backgroundColor = "#f9f9f9";
-        myWork!.style.backgroundColor = "#f3f3f3";
-        contactMe!.style.backgroundColor = "f3f3f3";
+        aboutMe!.style.backgroundColor = "#e2e2e2";
+        myWork!.style.backgroundColor = "#f6f6f6";
+        contactMe!.style.backgroundColor = "#f6f6f6";
         break;
       case "Work":
-        aboutMe!.style.backgroundColor = "#f3f3f3";
-        myWork!.style.backgroundColor = "#f9f9f9";
-        contactMe!.style.backgroundColor = "f3f3f3";
+        aboutMe!.style.backgroundColor = "#f6f6f6";
+        myWork!.style.backgroundColor = "#e2e2e2";
+        contactMe!.style.backgroundColor = "#f6f6f6";
         break;
       case "Contact":
-        aboutMe!.style.backgroundColor = "#f3f3f3";
-        myWork!.style.backgroundColor = "#f3f3f3";
-        contactMe!.style.backgroundColor = "f9f9f9";
+        aboutMe!.style.backgroundColor = "#f6f6f6";
+        myWork!.style.backgroundColor = "#f6f6f6";
+        contactMe!.style.backgroundColor = "#e2e2e2";
         break;
     }
   }
+  setInterval(SwitchHighlight, 5);
   return (
     <>
       <div id="nav-container" className="fixed-top">
@@ -66,9 +66,9 @@ function NavBar() {
             <h1>Griffin Penn</h1>
           </div>
           <div className="button-container">
-            <button id="about">About Me</button>
-            <button id="work">Work</button>
-            <button id="contact">Contact</button>
+            <button id={props.aboutTag}>About Me</button>
+            <button id={props.workTag}>Work</button>
+            <button id={props.contactTag}>Contact</button>
             <button id="linkedin-button">
               <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/">
                 <img src={linkedin} alt="" />

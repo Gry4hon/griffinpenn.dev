@@ -8,10 +8,14 @@ import nodejslogo from "./Styles/Assets/NodeJS_Logo.gif";
 
 import "./Styles/TechStackStyles.css";
 
-function TechStack(changePage: any) {
+function TechStack() {
+  function ChangePage() {
+    console.log("Tech page");
+    localStorage["currentPage"] = "Landing";
+  }
   return (
     <>
-      <div id="tech-stack-body">
+      <div onMouseEnter={ChangePage} id="tech-stack-body">
         <div className="tech-stack-container container">
           <div className="tech-stack-header container">
             <p>

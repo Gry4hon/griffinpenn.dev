@@ -1,9 +1,13 @@
 import "./Styles/ContactMeStyles.css";
 
-function ContactMe(changePage: any) {
+function ContactMe() {
+  function ChangePage() {
+    console.log("Contact page");
+    localStorage["currentPage"] = "Contact";
+  }
   return (
     <>
-      <div id="contact-body">
+      <div onMouseEnter={ChangePage} id="contact-body">
         <div className="container">
           <div className="contact-elements">
             <div className="contact-header">

@@ -1,10 +1,14 @@
 import "./styles/ProjectStyles.css";
 import ProjectBox from "./ProjectBox.tsx";
 
-function Projects(changePage: any) {
+function Projects() {
+  function ChangePage() {
+    console.log("Project page");
+    localStorage["currentPage"] = "Work";
+  }
   return (
     <>
-      <div id="projects-body">
+      <div onMouseEnter={ChangePage} id="projects-body">
         <div className="projects-elements container">
           <div className="projects-header">
             <p>

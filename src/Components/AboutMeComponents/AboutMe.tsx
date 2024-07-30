@@ -2,10 +2,14 @@ import "./AboutMeStyles/AboutMeStyle.css";
 import graduate from "./AboutMeStyles/Assets/Graduate_Me.png";
 //import working from "./AboutMeStyles/Assets/Working Me.png";
 
-function AboutMe(changePage: any) {
+function AboutMe() {
+  function ChangePage() {
+    console.log("About page");
+    localStorage["currentPage"] = "Landing";
+  }
   return (
     <>
-      <div id="aboutme-body">
+      <div onMouseEnter={ChangePage} id="aboutme-body">
         <div className="container">
           <div className="aboutme-elements">
             <div className="aboutme-text">

@@ -2,10 +2,15 @@ import "./LandingStyles/LandingBodyStyles.css";
 import animatedMe from "./LandingStyles/Assets/Landing Me.png";
 import arrow from "./LandingStyles/Assets/ARROW.png";
 
-function LandingBody(changePage: any) {
+function LandingBody() {
+  function ChangePage() {
+    console.log("Landing page");
+    localStorage["currentPage"] = "Landing";
+  }
+
   return (
     <>
-      <div id="landing-body">
+      <div onMouseEnter={ChangePage} id="landing-body">
         <div className="container">
           <div className="landing-elements">
             <div className="landing-text">

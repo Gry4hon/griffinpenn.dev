@@ -48,8 +48,32 @@
     font-weight: 550;
 }
 
+#about{
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin: 0;
+
+}
+#work{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin: 0;
+}
+
+#contact{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin: 0;
+
+}
+
+
 #linkedin-button{
-    
+    background-color: transparent;
     margin-right: 10px;
     margin-left: -20px;
 }
