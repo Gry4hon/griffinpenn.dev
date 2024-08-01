@@ -26,7 +26,7 @@ function LandingBody() {
                 Take a look at my <b>portfolio</b> below!
               </p>
             </div>
-            <div className="arrow-styles">
+            <div id="arrow-styles">
               <img src={arrow} />
             </div>
             <div className="landing-image">
