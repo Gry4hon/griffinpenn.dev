@@ -2,8 +2,8 @@ import "./NavBarStyles.css";
 import dark from "./dark.png";
 import light from "./light.png";
 
-import linkedin from "./linkedin.png";
-import octo from "./octocat.png";
+//import linkedin from "./linkedin.png";
+//import octo from "./octocat.png";
 
 let isClicked = false;
 
@@ -69,16 +69,6 @@ function NavBar(props: any) {
             <button id={props.aboutTag}>About Me</button>
             <button id={props.workTag}>Work</button>
             <button id={props.contactTag}>Contact</button>
-            <button id="linkedin-button">
-              <a href="https://www.linkedin.com/in/griffin-penn-0a2190215/">
-                <img src={linkedin} alt="" />
-              </a>
-            </button>
-            <button id="github-button">
-              <a href="https://github.com/Gry4hon">
-                <img src={octo} alt="" />
-              </a>
-            </button>
           </div>
 
           <div className="display-switch">
