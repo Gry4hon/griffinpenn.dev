@@ -19,7 +19,7 @@ function LandingBody() {
                 <b>Griffin Penn</b>
               </p>
               <p id="software-dev">
-                I am a <b>Software Developer</b> based out of{" "}
+                I am a <b>Full-Stack XR and Web Developer</b> based out of{" "}
                 <b>Seattle, Washington</b>
               </p>
               <p id="port">

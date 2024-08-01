@@ -95,3 +95,48 @@
     }
 
 }
+
+@media screen and (max-width: 1690px) {
+    #tech-stack-body{
+        background-image: url("./Assets/BackgroundImage.png");
+        background-repeat: no-repeat;
+        background-size: 100% 1220px;
+        width: auto;
+        z-index: 2;
+        box-shadow: 0 16px 2px -2px  #01032650;
+        height: 1220px;
+        margin-top: 1px;
+    }
+
+    .tech-stack-container{
+        height: 1220px;
+        display: flow-root;
+    }
+
+
+    .logo-group-one{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        left: auto;
+        right: auto;
+        margin-top: 30px;
+
+    }
+    
+    .logo-group-one img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .logo-group-two{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .logo-group-two img{
+        width: 200px;
+        height: 200px;
+        
+    }
+}
