@@ -4,18 +4,12 @@ import graduate from "./AboutMeStyles/Assets/Graduate_Me.png";
 
 function AboutMe() {
   function ChangePage() {
-    console.log("About page");
     localStorage["currentPage"] = "Landing";
   }
   return (
     <>
       <div onMouseEnter={ChangePage} id="aboutme-body">
         <div className="container">
-        <div className="aboutme-header">
-              <p>
-                Who is <b className="colored-emp">Griffin Penn</b>
-              </p>
-            </div>
           <div className="aboutme-elements">
             <div className="aboutme-text">
               <p>
@@ -34,7 +28,11 @@ function AboutMe() {
                 developing <b>software</b>.
               </p>
             </div>
-            
+            <div className="aboutme-header">
+              <p>
+                Who is <b className="colored-emp">Griffin Penn</b>
+              </p>
+            </div>
             <div className="aboutme-image-carosel">
               <img src={graduate} alt="" />
             </div>

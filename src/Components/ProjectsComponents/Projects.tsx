@@ -3,7 +3,6 @@ import ProjectBox from "./ProjectBox.tsx";
 
 function Projects() {
   function ChangePage() {
-    console.log("Project page");
     localStorage["currentPage"] = "Work";
   }
   return (

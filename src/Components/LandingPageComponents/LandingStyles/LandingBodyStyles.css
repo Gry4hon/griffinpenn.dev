@@ -1,4 +1,4 @@
-@media screen and (max-width: 2560px){
+
     #landing-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
@@ -23,18 +23,19 @@
         display: flexbox;
         width: 700px;
         height: 500px;
+        margin-left: -100px;
         font-size: 24px;
     }
     
     .landing-image{
         margin-top: 150px;
-        margin-left: 30%;
+        margin-left: 16%;
         height: 800px;
     }
     
     .landing-image img{
-        width: 800px;
-        height: 800px;
+        width: 700px;
+        height: 700px;
     }
     
     #arrow-styles{
@@ -43,7 +44,7 @@
     }
     
     #arrow-styles img{
-        margin-top: 1110px;
+        margin-top: 1100px;
         width: 130px;
         height: 130px;
 
@@ -59,7 +60,7 @@
     #port{
         margin-top: 50px;
     }
-}
+
 
 
 
@@ -73,7 +74,7 @@
     #landing-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 100% 1360px;
+        background-size: 100% 1100px;
         width: auto;
         z-index: 4;
         box-shadow: 0 16px 2px -2px  #01032650;
@@ -82,7 +83,7 @@
 
     .landing-elements{
         display: grid;
-        height: 1360px;
+        height: 1100px;
     }
     
     
@@ -105,7 +106,7 @@
     }
 
     #arrow-styles img{  
-        margin-top: 890px;
+        margin-top: 820px;
         width: 120px;
         height: 120px;
         margin-left: -160px;
@@ -116,16 +117,25 @@
 }
 
 
-@media screen and (max-width: 1690px){
+@media screen and (max-width: 1450px){
 
     #landing-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 100% 1060px;
+        background-size: 100% 1020px;
         width: auto;
         z-index: 4;
         box-shadow: 0 16px 2px -2px  #01032650;
         margin-top: 1px;
+    }
+
+    .landing-elements{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: auto;
+        width: auto;
+        height: 1020px;
+    
     }
 
     #arrow-styles img{
@@ -134,35 +144,36 @@
         margin: 0;
     }
     #arrow-styles{
-        width: 300px;
-        
+        width: 200px;
         height: 200px;
-        text-align: center;
-        margin-top:670px;
-        margin-left: -60%;
-        margin-right: -50%;
+        
+        margin-top:720px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
     }
 
     .landing-text{
-        width: 600px;
+        width: 500px;
         height: 500px;
-        margin-left: 100px;
+        margin-left: 0;
         margin-top: 230px;
+        font-size: 22px;
     }
+
 
     .landing-image img{
         width: 470px;   
         height: 470px;
-        margin-left: -350px;
-        margin-top: -30px;
+        margin-left: -80px;
+    }
+    .landing-image{
+        margin-top: 150px;
+        margin-left: 16%;
+        height: 500px;
+        width: 200px;
+        
     }
 
-    .landing-elements{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        height: auto;
-        width: auto;
-        height: 1060px;
     
-    }
 }

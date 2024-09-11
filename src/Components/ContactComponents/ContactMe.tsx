@@ -2,7 +2,6 @@ import "./Styles/ContactMeStyles.css";
 
 function ContactMe() {
   function ChangePage() {
-    console.log("Contact page");
     localStorage["currentPage"] = "Contact";
   }
   return (
@@ -19,7 +18,7 @@ function ContactMe() {
               You can send me an email <b>here</b>, or message me on my{" "}
               <b>LinkedIn</b>, either way I can’t wait to hear from you!
             </p>
-            <div className="contact-container">
+            {/* <div className="contact-container">
               <label id="email-label" className="label-styles" htmlFor="email">
                 Your <b>Email</b>
               </label>
@@ -33,9 +32,9 @@ function ContactMe() {
               </label>
               <textarea id="message" className="message-box-styles"></textarea>
             </div>
-            <button className="send-button-styles"> S E N D </button>
-            <footer className="footer-styles">&copy;Griffin Penn 2024</footer>
+            <button className="send-button-styles"> S E N D </button> */}
           </div>
+          <footer className="footer-styles">&copy;Griffin Penn 2024</footer>
         </div>
       </div>
     </>

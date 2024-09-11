@@ -4,7 +4,6 @@ import arrow from "./LandingStyles/Assets/ARROW.png";
 
 function LandingBody() {
   function ChangePage() {
-    console.log("Landing page");
     localStorage["currentPage"] = "Landing";
   }
 

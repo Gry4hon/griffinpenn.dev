@@ -10,7 +10,6 @@ import "./Styles/TechStackStyles.css";
 
 function TechStack() {
   function ChangePage() {
-    console.log("Tech page");
     localStorage["currentPage"] = "Landing";
   }
   return (

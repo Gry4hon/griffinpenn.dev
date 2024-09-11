@@ -62,13 +62,21 @@ function NavBar(props: any) {
       <div id="nav-container" className="fixed-top">
         <div className="container nav-bar-style">
           <div className="name-logo-container">
-            <img src="./LOGO.png" />
+            <a href="#landing-body">
+              <img src="./LOGO.png" />
+            </a>
             <h1>Griffin Penn</h1>
           </div>
           <div className="button-container">
-            <button id={props.aboutTag}>About Me</button>
-            <button id={props.workTag}>Work</button>
-            <button id={props.contactTag}>Contact</button>
+            <a href="#aboutme-body">
+              <button id={props.aboutTag}>About Me</button>
+            </a>
+            <a href="#projects-body">
+              <button id={props.workTag}>Work</button>
+            </a>
+            <a href="#contact-body">
+              <button id={props.contactTag}>Contact</button>
+            </a>
           </div>
 
           <div className="display-switch">
