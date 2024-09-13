@@ -36,17 +36,30 @@
     display: grid;
     grid-template-rows: auto auto;
     position: relative;
+    margin-top: 60px;
 }
+
+.linkedin{
+    text-decoration: none;
+    color: #010326;
+}
+.linkedin:hover{
+    color: #6900ff;
+}
+
 
 .email-box-styles{
     width: 800px;
     height: 40px;   
+    margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border: 2px solid #010326;
     border-radius: 10px;
 }
+
+
 
 .email-box-styles:focus{
     outline-color: #6900ff;
@@ -68,10 +81,8 @@
 }
 
 .send-button-styles{
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 50px;
     border: 4px solid #6900ff;
@@ -86,17 +97,16 @@
 }
 
 
-#email-label{
-    margin-top: 50px;
-
-}
 label{
     text-align: center;
 }
 .label-styles{
     color: #010326;
     font-size: 22px;
-
+    margin-top: 20px;
+}
+#email-label{
+    margin-top: 18px;
 }
 
 .send-button-styles:active{

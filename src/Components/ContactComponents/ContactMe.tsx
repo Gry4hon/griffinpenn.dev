@@ -15,24 +15,47 @@ function ContactMe() {
               </p>
             </div>
             <p className="contact-bio">
-              You can send me an email <b>here</b>, or message me on my{" "}
-              <b>LinkedIn</b>, either way I can’t wait to hear from you!
+              You can send me an email here, or message me on my{" "}
+              <a
+                href="https://www.linkedin.com/in/griffin-penn-0a2190215"
+                className="linkedin"
+                target="new"
+              >
+                <b>LinkedIn</b>
+              </a>
+              , either way I can’t wait to hear from you!
             </p>
-            {/* <div className="contact-container">
+
+            <form
+              action="https://formsubmit.co/griffinpenndev@gmail.com"
+              method="POST"
+              className="contact-container"
+            >
               <label id="email-label" className="label-styles" htmlFor="email">
                 Your <b>Email</b>
               </label>
               <input
                 id="email"
+                name="email"
                 className="email-box-styles"
                 type="email"
+                required
               ></input>
               <label className="label-styles" htmlFor="message">
                 What did you want to <b>talk</b> about?
               </label>
-              <textarea id="message" className="message-box-styles"></textarea>
-            </div>
-            <button className="send-button-styles"> S E N D </button> */}
+              <textarea
+                id="message"
+                name="message"
+                className="message-box-styles"
+                required
+              ></textarea>
+              <input
+                className="send-button-styles"
+                type="submit"
+                value={"S E N D"}
+              ></input>
+            </form>
           </div>
           <footer className="footer-styles">&copy;Griffin Penn 2024</footer>
         </div>
