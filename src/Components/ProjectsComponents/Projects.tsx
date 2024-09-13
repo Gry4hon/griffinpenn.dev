@@ -1,5 +1,12 @@
 import "./styles/ProjectStyles.css";
 import ProjectBox from "./ProjectBox.tsx";
+import reactlogo from "./styles/Assets/Animated react logo.gif";
+import cpplogo from "./styles/Assets/C++_Logo.gif";
+import csharplogo from "./styles/Assets/Csharp_Logo.gif";
+import arduinologo from "./styles/Assets/Arduino_Logo.gif";
+import mysqllogo from "./styles/Assets/MySQL_Logo.gif";
+import unitylogo from "./styles/Assets/Unity_Logo.gif";
+import nodejslogo from "./styles/Assets/NodeJS_Logo.gif";
 
 function Projects() {
   function ChangePage() {
@@ -25,6 +32,7 @@ function Projects() {
               title="Project Vulcn"
               link="https://github.com/Gry4hon/Project-Vulcn"
               bio="This is an ongoing research and development project that seeks to understand how temperature can better immerse a user in virtual reality. This was done through developing custom hardware utilizing an Arduino microcontroller that was able to received and send a serial signal to the Unity game engine."
+              images={[{ csharplogo }, { unitylogo }, { arduinologo }]}
             />
             <ProjectBox
               title="Burger Rush"

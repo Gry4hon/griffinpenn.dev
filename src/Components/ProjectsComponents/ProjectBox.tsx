@@ -3,6 +3,7 @@ import github from "./styles/Assets/github_logo.png";
 import logo from "./styles/Assets/LOGO.png";
 
 function ProjectBox(props: any) {
+  //Gotta have like a map of values for the imgs for the tech stack right?
   return (
     <>
       <div className="container">
