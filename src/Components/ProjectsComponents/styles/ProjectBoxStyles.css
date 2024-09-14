@@ -54,19 +54,18 @@
 .bio-styles{
     text-align: left;
     margin: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .tech-stack-contianer{
     display: flex;
-    
     text-align: left;
 }
 
 
 .tech-stack-contianer img{
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
-    margin-left: 10px;
+    margin-left: 30px;
 }

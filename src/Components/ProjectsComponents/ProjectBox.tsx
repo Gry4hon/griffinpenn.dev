@@ -4,6 +4,8 @@ import logo from "./styles/Assets/LOGO.png";
 
 function ProjectBox(props: any) {
   //Gotta have like a map of values for the imgs for the tech stack right?
+  //<img src="/src/Components/ProjectsComponents/styles/Assets/LOGO.png">
+  //const links = props.images;
   return (
     <>
       <div className="container">
@@ -16,13 +18,12 @@ function ProjectBox(props: any) {
             </a>
           </div>
           <p className="bio-styles">{props.bio}</p>
-          <p className="tech-stack-title">Tech Used:</p>
+          {/* <p className="tech-stack-title">Tech Used:</p>
           <div className="tech-stack-contianer">
-            <img src={logo} />
-            <img src={logo} />
-            <img src={logo} />
-            <img src={logo} />
-          </div>
+            {links.map((image: string) => {
+              return <img src={image} />;
+            })}
+          </div> */}
         </div>
       </div>
     </>
