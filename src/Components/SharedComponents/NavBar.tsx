@@ -70,46 +70,48 @@ function NavBar(props: any) {
   setInterval(SwitchHighlight, 5);
   return (
     <>
-      <div id="nav-container" className="fixed-top">
-        <div className="container nav-bar-style">
-          <div className="name-logo-container">
-            <a href="#landing-body">
-              <img src="./LOGO.png" />
-            </a>
-            <h1>Griffin Penn</h1>
+      <div className="container">
+        <div id="nav-container" className="fixed-top">
+          <div className="container nav-bar-style">
+            <div className="name-logo-container">
+              <a href="#landing-body">
+                <img src="./LOGO.png" />
+              </a>
+              <h1>Griffin Penn</h1>
+            </div>
+            <div className="button-container">
+              <a href="#aboutme-body">
+                <button id={props.aboutTag}>About Me</button>
+              </a>
+              <a href="#projects-body">
+                <button id={props.workTag}>Work</button>
+              </a>
+              <a href="#contact-body">
+                <button id={props.contactTag}>Contact</button>
+              </a>
+            </div>
+            <div className="mobile-menu-button">
+              <button onClick={MobileMenuToggle}>#</button>
+            </div>
+            <div className="display-switch">
+              <p>Light</p>
+              <button id="switch_button" onClick={MoveLogo}>
+                <img src={light} id="switch-icon" />
+              </button>
+              <p>Dark</p>
+            </div>
           </div>
-          <div className="button-container">
+          <div className="mobile-menu-dropdown" id="mobile-menu">
             <a href="#aboutme-body">
-              <button id={props.aboutTag}>About Me</button>
+              <button>About Me</button>
             </a>
             <a href="#projects-body">
-              <button id={props.workTag}>Work</button>
+              <button>Work</button>
             </a>
             <a href="#contact-body">
-              <button id={props.contactTag}>Contact</button>
+              <button>Contact</button>
             </a>
           </div>
-          <div className="mobile-menu-button">
-            <button onClick={MobileMenuToggle}>#</button>
-          </div>
-          <div className="display-switch">
-            <p>Light</p>
-            <button id="switch_button" onClick={MoveLogo}>
-              <img src={light} id="switch-icon" />
-            </button>
-            <p>Dark</p>
-          </div>
-        </div>
-        <div className="mobile-menu-dropdown" id="mobile-menu">
-          <a href="#aboutme-body">
-            <button>About Me</button>
-          </a>
-          <a href="#projects-body">
-            <button>Work</button>
-          </a>
-          <a href="#contact-body">
-            <button>Contact</button>
-          </a>
         </div>
       </div>
     </>
