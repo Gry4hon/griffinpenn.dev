@@ -40,3 +40,49 @@
 .colored-emp{
     color:#6900ff;
 }
+
+
+@media screen and (max-width: 1920px) {
+    #projects-body{
+        background-image: url("./Assets/BackgroundImage.png");
+        background-repeat: no-repeat;
+        background-size: 100% 2660px;
+        width: auto;
+        z-index: 4;
+        box-shadow: 0 16px 2px -2px  #01032650;
+        height: 2660px;
+        margin-top: 1px;
+    }
+    
+    .projects-elements{
+        height: 2360px;
+        display: inline;
+    }
+    
+    .projects-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-content: center;
+        
+    }
+    
+    .projects-header{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 55px;
+        width: auto;
+        height: 100px;
+    }
+    
+    .projects-bio{
+        text-align: center;
+        width: auto;
+        font-size: 26px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .colored-emp{
+        color:#6900ff;
+    }
+}

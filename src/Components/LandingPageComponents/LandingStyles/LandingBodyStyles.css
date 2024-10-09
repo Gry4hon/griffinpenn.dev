@@ -95,9 +95,10 @@
     }
 
     .landing-image img{
-        width: 500px;   
-        height: 500px;
+        width: 430px;   
+        height: 430px;
         margin-left: -350px;
+        margin-top: 60px;
     }
     #arrow-styles{
         width: 130px;
@@ -106,7 +107,7 @@
     }
 
     #arrow-styles img{  
-        margin-top: 820px;
+        margin-top: 860px;
         width: 120px;
         height: 120px;
         margin-left: -160px;
@@ -117,7 +118,7 @@
 }
 
 
-@media screen and (max-width: 1450px){
+/* @media screen and (max-width: 1450px){
 
     #landing-body{
         background-image: url("./Assets/BackgroundImage.png");
@@ -176,4 +177,4 @@
     }
 
     
-}
+} */
