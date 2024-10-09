@@ -29,6 +29,17 @@ function MoveLogo() {
     isClicked = false;
   }
 }
+let isMobileMenuVisable = false;
+function MobileMenuToggle() {
+  const mobileMenu = document.getElementById("mobile-menu") as HTMLDivElement;
+  if (!isMobileMenuVisable) {
+    mobileMenu.style.display = "grid";
+    isMobileMenuVisable = true;
+  } else {
+    mobileMenu.style.display = "none";
+    isMobileMenuVisable = false;
+  }
+}
 
 localStorage["currentPage"] = "";
 
@@ -78,7 +89,9 @@ function NavBar(props: any) {
               <button id={props.contactTag}>Contact</button>
             </a>
           </div>
-
+          <div className="mobile-menu-button">
+            <button onClick={MobileMenuToggle}>#</button>
+          </div>
           <div className="display-switch">
             <p>Light</p>
             <button id="switch_button" onClick={MoveLogo}>
@@ -86,6 +99,17 @@ function NavBar(props: any) {
             </button>
             <p>Dark</p>
           </div>
+        </div>
+        <div className="mobile-menu-dropdown" id="mobile-menu">
+          <a href="#aboutme-body">
+            <button>About Me</button>
+          </a>
+          <a href="#projects-body">
+            <button>Work</button>
+          </a>
+          <a href="#contact-body">
+            <button>Contact</button>
+          </a>
         </div>
       </div>
     </>
