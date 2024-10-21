@@ -141,3 +141,77 @@
         margin-left: 30px;
     }
 }
+
+
+
+@media screen and (max-width: 1000px) {
+    #box-body{
+        width: 400px;
+        height: 600px;
+        padding: 50px;
+        text-align: center;
+        border-radius: 20px;
+        background-image: url("./Assets/projectborder.png");
+        background-size: 400px 600px;
+        background-repeat: no-repeat;
+        z-index: 3;
+        position: relative;
+        margin: 80px 80px 80px 80px;
+    }
+    
+    
+    .project-picture-styles{
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    
+    .title-styles{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    .tech-stack-title{
+        text-align: left;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 30px
+    }
+    
+    .title-github{
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .githib-styles{
+        border-radius: 50%; 
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 2px;
+        border: solid 2px #6900ff;
+    }
+    
+    .bio-styles{
+        text-align: left;
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    .tech-stack-contianer{
+        display: flex;
+        text-align: left;
+    }
+    
+    
+    .tech-stack-contianer img{
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin-left: 30px;
+    }
+}
