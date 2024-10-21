@@ -186,7 +186,7 @@
 
 
     .landing-image img{
-        width: 370px;   
+        width: auto;   
         height: 370px;
         
     }

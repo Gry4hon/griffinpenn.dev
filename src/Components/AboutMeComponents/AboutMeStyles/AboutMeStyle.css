@@ -134,11 +134,11 @@
     .image-mobile{
         width: auto;
        text-align: center;
-      
+        margin-left: -10px;
     }
     
     .image-mobile img{
-        width: 340px;
+        width: auto;
         height: 340px;
     }
 

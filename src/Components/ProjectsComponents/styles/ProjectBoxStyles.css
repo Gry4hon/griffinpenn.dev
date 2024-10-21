@@ -146,13 +146,13 @@
 
 @media screen and (max-width: 1000px) {
     #box-body{
-        width: 400px;
+        width: 350px;
         height: 600px;
-        padding: 50px;
+        padding: 30px;
         text-align: center;
         border-radius: 20px;
         background-image: url("./Assets/projectborder.png");
-        background-size: 400px 600px;
+        background-size: 350px 600px;
         background-repeat: no-repeat;
         z-index: 3;
         position: relative;
@@ -163,7 +163,7 @@
     .project-picture-styles{
         width: 200px;
         height: 200px;
-        
+        margin-top: 10px;
     }
     
     
