@@ -117,8 +117,6 @@
         width: 120px;
         height: 120px;
         margin-left: -160px;
-
-       
     }
 
     .landing-text-mobile{
@@ -132,7 +130,7 @@
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
 
     .landing-body{
         background-image: url("./Assets/BackgroundImage.png");
@@ -158,12 +156,12 @@
         text-align: center;
     }
     #arrow-styles{
-        width: 200px;
+        width: 100%;
         height: 200px;
         margin-top:720px;
         position: absolute;
-        left: 50%;
-        right: 50%;
+        text-align: center;
+        
     }
 
     .landing-text-desktop{
@@ -185,8 +183,6 @@
         height: 200px;
         display: block;
         font-size: 16px;
-        
-        
         margin-top: 400px;
     }
 
@@ -196,6 +192,7 @@
         height: 370px;
         
     }
+
     .landing-image{
         margin-top: 220px;
         height: 50px;

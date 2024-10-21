@@ -114,7 +114,7 @@
     display: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1200px){
     #nav-container{
         z-index: 4;
         margin-bottom: -150px;
@@ -134,7 +134,7 @@
     
     .name-logo-container{
         display: flex;
-        
+        padding: auto;
         margin-left: 6px;
         margin-right: 40px;
     
@@ -143,6 +143,7 @@
     .name-logo-container h1{
         margin-left: 12px;
         font-weight: bold;
+        width:150px;
         font-size: 24px;
         margin-top: 12px;
         color: #010326;
@@ -165,17 +166,20 @@
     
 
     .mobile-menu-button{
-        display:flex;
+        display: block;
+        width: 60%;
+        margin-left: auto;
     }
    
     
     .mobile-menu-button button{
         width: 50px;
         height: 50px;
-        position: absolute;
+       
         margin-top: 10px;
         margin-left: 15%;
         border-radius: 10px;
+        float: right;
     }
 
     .mobile-menu-dropdown{
@@ -186,6 +190,7 @@
         margin-top: -10px;
         display: none;
         grid-template-rows: auto auto auto;
+        box-shadow: 0 6px 12px -2px  #01032650;
         
     }
     .mobile-menu-dropdown button{
