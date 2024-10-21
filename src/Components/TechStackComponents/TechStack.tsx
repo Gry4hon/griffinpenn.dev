@@ -15,7 +15,7 @@ function TechStack() {
   return (
     <>
       <div onMouseEnter={ChangePage} id="tech-stack-body">
-        <div className="tech-stack-container container">
+        <div className="tech-stack-container-desktop container">
           <div className="tech-stack-header container">
             <p>
               My <b className="colored-emp">Tech Stack</b>
@@ -43,6 +43,44 @@ function TechStack() {
               </div>
             </div>
             <div className="logo-group-two container">
+              <div>
+                <img src={unitylogo} alt="" />
+              </div>
+              <div>
+                <img src={mysqllogo} alt="" />
+              </div>
+              <div>
+                <img src={csharplogo} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="tech-stack-container-mobile">
+          <div className="tech-stack-header container">
+            <p>
+              My <b className="colored-emp">Tech Stack</b>
+            </p>
+          </div>
+          <p className="tech-stack-bio container">
+            I have a wide <b>breadth</b> of experiences with using various{" "}
+            <b>frameworks</b>
+            and <b>software applications</b>, but here are the{" "}
+            <b>technologies</b> I specialize in:
+          </p>
+          <div className="container">
+            <div className="logo-group container">
+              <div>
+                <img src={cpplogo} alt="" />
+              </div>
+              <div>
+                <img src={reactlogo} alt="" />
+              </div>
+              <div>
+                <img src={nodejslogo} alt="" />
+              </div>
+              <div>
+                <img src={arduinologo} alt="" />
+              </div>
               <div>
                 <img src={unitylogo} alt="" />
               </div>

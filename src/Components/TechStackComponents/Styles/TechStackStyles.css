@@ -9,9 +9,12 @@
     margin-top: 1px;
 }
 
-.tech-stack-container{
+.tech-stack-container-desktop{
     height: 1390px;
     display: flow-root;
+}
+.tech-stack-container-mobile{
+    display: none;
 }
 
 .logo-group-one{
@@ -96,47 +99,56 @@
 
 }
 
-@media screen and (max-width: 1690px) {
+@media screen and (max-width: 1000px) {
     #tech-stack-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 100% 1220px;
+        background-size: 100% 100%;
         width: auto;
         z-index: 2;
         box-shadow: 0 16px 2px -2px  #01032650;
-        height: 1220px;
+        height: auto;
+        padding: 50px;
         margin-top: 1px;
     }
 
-    .tech-stack-container{
-        height: 1220px;
+    .tech-stack-container-desktop{
+        display:none;
+    }
+
+    .tech-stack-container-mobile{
+        height: auto;
         display: flow-root;
     }
 
 
-    .logo-group-one{
+    .logo-group{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto;
         left: auto;
         right: auto;
-        margin-top: 30px;
-
-    }
-    
-    .logo-group-one img{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .logo-group-two{
         margin-top: 50px;
-        display: grid;
-        grid-template-columns: auto auto auto;
+        text-align: center;
     }
     
-    .logo-group-two img{
+    .logo-group img{
         width: 200px;
         height: 200px;
-        
     }
+    
+
+    
+.tech-stack-header{
+    text-align: center;
+    font-size: 45px;
+    width: 900px;
+    margin-top: 100px;
+    height: auto;
+    text-align: center;
+}
+
+.tech-stack-bio{
+    text-align: center;
+    font-size: 20px;
+}
 }
