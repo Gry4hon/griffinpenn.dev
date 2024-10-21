@@ -8,23 +8,21 @@ function ProjectBox(props: any) {
   //const links = props.images;
   return (
     <>
-      <div className="container">
-        <div id="box-body">
-          <img className="project-picture-styles" src={logo}></img>
-          <div className="title-github">
-            <p className="title-styles">{props.title}</p>
-            <a href={props.link}>
-              <img src={github} className="githib-styles" />
-            </a>
-          </div>
-          <p className="bio-styles">{props.bio}</p>
-          {/* <p className="tech-stack-title">Tech Used:</p>
+      <div id="box-body">
+        <img className="project-picture-styles" src={logo}></img>
+        <div className="title-github">
+          <p className="title-styles">{props.title}</p>
+          <a href={props.link}>
+            <img src={github} className="githib-styles" />
+          </a>
+        </div>
+        <p className="bio-styles">{props.bio}</p>
+        {/* <p className="tech-stack-title">Tech Used:</p>
           <div className="tech-stack-contianer">
             {links.map((image: string) => {
               return <img src={image} />;
             })}
           </div> */}
-        </div>
       </div>
     </>
   );
