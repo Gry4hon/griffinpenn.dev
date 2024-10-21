@@ -145,7 +145,6 @@
     .landing-elements{
         height: auto;
         width: auto;
-        
         height: 820px;
     }
 
@@ -156,12 +155,11 @@
         text-align: center;
     }
     #arrow-styles{
-        width: 100%;
+        width: 95%;
         height: 200px;
         margin-top:720px;
         position: absolute;
         text-align: center;
-        
     }
 
     .landing-text-desktop{
@@ -196,7 +194,7 @@
     .landing-image{
         margin-top: 220px;
         height: 50px;
-        width: 20px;
+        width: auto;
         position: absolute;
         left: 50%;
         right: 50%;
