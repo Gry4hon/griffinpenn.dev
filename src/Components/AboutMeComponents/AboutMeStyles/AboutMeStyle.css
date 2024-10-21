@@ -8,10 +8,14 @@
     margin-top: 1px;
 }
 
-.aboutme-elements{
+.aboutme-elements-desktop{
     display: grid;
     grid-template-columns: auto auto auto;
     height: 1360px;
+}
+
+.aboutme-elements-mobile{
+    display: none;
 }
 
 .aboutme-text{
@@ -84,32 +88,40 @@
 
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1000px) {
     #aboutme-body{
         background-image: url("./Assets/BackgroundImage.png");
         background-repeat: no-repeat;
-        background-size: 100% 1060px;
+        background-size: 100% 100%;
         width: auto;
         z-index: 4;
-        box-shadow: 0 16px 2px -2px  #01032650;
+        height: auto;
+        padding: 30px;
+        box-shadow: 0 4px 2px -2px  #01032650;
         margin-top: 1px;
     }
     
-    .aboutme-elements{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        height: 1060px;
+    .aboutme-elements-desktop{
+        display: none;
     }
-    .aboutme-text{
-        margin-top: 330px;
-        width: 600px;
-        font-size: 22px;
+    
+    .aboutme-elements-mobile{
+        display: block;
+
         height: auto;
+    }
+
+    .aboutme-text{
+        margin: 10px;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+        
     }
     
     .aboutme-header{
         text-align: center;
-        font-size: 55px;
+        font-size: 45px;
         margin-top: 200px;
         left: auto;
         right: auto;
@@ -119,14 +131,15 @@
         color:#6900ff;
     }
     
-    .aboutme-image-carosel{
-        margin-top: 240px;
-       
+    .image-mobile{
+        width: auto;
+       text-align: center;
+      
     }
     
-    .aboutme-image-carosel img{
-        width: 500px;
-        height: 500px;
+    .image-mobile img{
+        width: 340px;
+        height: 340px;
         
     }
 
